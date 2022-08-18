@@ -2,10 +2,10 @@
               START THE HEADER
             ==================================== -->
 <header class="default heade-sticky">
-    <a href="index.html">
+    <a href="{{ url('/') }}">
         <div class="un-item-logo">
-            <img class="logo-img light-mode" src="images/logo_b.svg" alt="">
-            <img class="logo-img dark-mode" src="images/logo-white.svg" alt="">
+            <img class="logo-img light-mode" src="{{ asset('images/logo_b.svg') }}" alt="">
+            <img class="logo-img dark-mode" src="{{ asset('images/logo-white.svg') }}" alt="">
         </div>
     </a>
     <div class="un-block-right">
@@ -54,18 +54,7 @@
             <div class="swiper-wrapper wrapper-stories" id="stories">
                 <!-- MY STORY -->
                 <div class="swiper-slide space">
-                    <button type="button" class="btn add-my-story" data-bs-toggle="modal"
-                        data-bs-target="#mdllAddStory">
-                        <div class="my_img">
-                            <img src="images/avatar/11.jpg" alt="my story">
-                            <div class="icon">
-                                <i class="ri-add-fill"></i>
-                            </div>
-                        </div>
-                        <div class="display-text">
-                            <span>My Story</span>
-                        </div>
-                    </button>
+                 
                 </div>
                 <!-- HERE -> ITEMS -> AUTOMATICALLY BY JAVASCRIPT -->
             </div>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\StorysController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,15 +23,15 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/services', [App\Http\Controllers\HomeController::class, 'services'])->name('services');
 
+Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
+Route::get('/service/{id}', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 
+Route::get('/help', [App\Http\Controllers\HomeController::class, 'help'])->name('help');
 
-
-
-
-
-
+Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 
 
 

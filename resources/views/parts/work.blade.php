@@ -16,66 +16,31 @@ START THE CONTENT
             <div class="content-cards-NFTs">
                 <div class="swiper cardGradual">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="margin-right: 20px">
-                            <!-- item-card-gradual -->
-                            <div class="item-card-gradual">
-                                <!-- <div class="head-card"></div> -->
-                                <a href="page-collectibles-details.html" class="body-card">
-                                    <div class="cover-nft">
-                                        <picture>
-                                            <source srcset="images/other/26.jpg" type="image/webp">
-                                            <img class="img-cover" src="images/other/26.jpg" alt="image NFT">
-                                        </picture>
-
-                                        <div class="icon-type">
-                                            <i class="ri-vidicon-line"></i>
-                                        </div>
-                                        <div class="countdown-time">
-                                            <span>المواقع الإلكترونية</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="footer-card">
-                                    <div class="starting-bad">
-                                        <h4>موقع مقايضة</h4>
-                                        <span>موقع إلكتروني مخصص لعرض السلع ومقايضتها</span>
-                                    </div>
-                                    <div class="btn-like-click">
-                                        <div class="btnLike">
-                                            <input type="checkbox">
-                                            <!--Views-->
-                                            <span class="count-likes">195</span>
-                                            <i class="ri-eye-line"></i>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                        @foreach ( \App\Models\Project::all() as $project )
+                        
                         <div class="swiper-slide">
                             <!-- item-card-gradual -->
                             <div class="item-card-gradual">
                                 <!-- <div class="head-card"></div> -->
-                                <a href="page-collectibles-details.html" class="body-card">
+                                <a href="#" class="body-card">
                                     <div class="cover-nft">
                                         <picture>
-                                            <source srcset="images/other/26.jpg" type="image/webp">
-                                            <img class="img-cover" src="images/other/26.jpg" alt="image NFT">
+                                            <source srcset="{{ asset( $project->image ) }}" type="image/webp">
+                                            <img class="img-cover" src="{{ asset( $project->image ) }}" alt="image NFT">
                                         </picture>
 
                                         <div class="icon-type">
                                             <i class="ri-vidicon-line"></i>
                                         </div>
                                         <div class="countdown-time">
-                                            <span>المواقع الإلكترونية</span>
+                                            <span>{{ $project->service?->name }}</span>
                                         </div>
                                     </div>
                                 </a>
                                 <div class="footer-card">
                                     <div class="starting-bad">
-                                        <h4>موقع مقايضة</h4>
-                                        <span>موقع إلكتروني مخصص لعرض السلع ومقايضتها</span>
+                                        <h4>{{ $project->name }}</h4>
+                                        <span>{{ $project->content }}</span>
                                     </div>
                                     <div class="btn-like-click">
                                         <div class="btnLike">
@@ -91,6 +56,7 @@ START THE CONTENT
                             </div>
                         </div>
 
+                        @endforeach
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>

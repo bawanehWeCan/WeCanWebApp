@@ -10,9 +10,10 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <meta name="description" content="Unic – NFT Marketplace PWA Mobile Template">
+    <meta name="description"
+        content="شركة نستطيع ، شركة ويكان ، شركة we can ، شركة برمجة، شركة تصميم ، شركة تسويق الكتروني، شركة تصميم تطبيقات ، شركة تصميم مواقع ، شركة برمجة مواقع ، we can for information technology , wecan for design , wecan for webservice , we can ، we can do it, we can company , wecan company , web serivce , digital marketing , business solution , wecan for busniess solution , شركة نستطيع للبرمجة، شركة نستطيع للتصميم ، شركة نستطيع للبرمجة > شركة ويكان للتسويق ، شركة ويكان لتصميم المواقع ، شركة نستطيع لتصميم المواقع">
     <meta name="keywords"
-        content="bootstrap 5, mobile template, wallet, crypto, currency, about, blog, cordova, phonegap, mobile, html, nft, store, marketplace, pwa" />
+        content="شركة نستطيع ، شركة ويكان ، شركة we can ، شركة برمجة، شركة تصميم ، شركة تسويق الكتروني، شركة تصميم تطبيقات ، شركة تصميم مواقع ، شركة برمجة مواقع ، we can for information technology , wecan for design , wecan for webservice , we can ، we can do it, we can company , wecan company , web serivce , digital marketing , business solution , wecan for busniess solution , شركة نستطيع للبرمجة، شركة نستطيع للتصميم ، شركة نستطيع للبرمجة > شركة ويكان للتسويق ، شركة ويكان لتصميم المواقع ، شركة نستطيع لتصميم المواقع" />
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="{{ asset('images/favicon/icon-32x32.png') }}" sizes="32x32">
@@ -64,6 +65,288 @@
         @include('layouts.parts.footer')
     </div>
 
+    <!-- ===================================
+      START THE MODAL UPLOAD
+    ==================================== -->
+    <div class="modal transition-bottom screenFull defaultModal mdlladd__rate fade" id="mdllUploadItem" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="title-modal">Upload Item</h1>
+                    <button type="button" class="btn btnClose" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-upload-item text-center">
+                        <p>
+                            Choose <span>"Single"</span> if you want your collectible to be one of a kind or
+                            <span>"Multiple"</span>
+                            if you want
+                            to sell one collectible multiple times
+                        </p>
+                        <div class="grid_buttonUpload">
+                            <a href="page-create-single.html" class="btn btn-create bg-primary text-white margin-b-20">
+                                Create Single
+                            </a>
+                            <a href="page-create-multi.html"
+                                class="btn btn-create bg-white border border-solid border-snow text-dark">
+                                Create Multiple
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer border-0">
+                    <div class="env-pb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================================
+      START THE MODAL ADD ETH
+    ==================================== -->
+    <div class="modal transition-bottom screenFull defaultModal mdlladd__rate fade" id="mdllAddETH" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="title-modal">Add ETH to your wallet</h1>
+                    <button type="button" class="btn btnClose" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-upload-item">
+                        <p class="text-center">
+                            Select one of the options to deposit <br> ETH to your wallet
+                        </p>
+                        <div class="un-navMenu-default margin-t-30 p-0">
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-3">
+                                    <a class="nav-link effect-click" href="javascript: void(0)">
+                                        <div class="item-content-link">
+                                            <div class="icon color-text w-auto">
+                                                <i class="ri-exchange-box-line"></i>
+                                            </div>
+                                            <h3 class="link-title">Deposit from an exchange</h3>
+                                        </div>
+                                        <div class="other-cc">
+                                            <span class="badge-text"></span>
+                                            <div class="icon-arrow">
+                                                <i class="ri-arrow-drop-right-line"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-0">
+                                    <a class="nav-link effect-click" href="javascript: void(0)">
+                                        <div class="item-content-link">
+                                            <div class="icon color-text w-auto">
+                                                <i class="ri-bank-card-line"></i>
+                                            </div>
+                                            <h3 class="link-title">Buy with card</h3>
+                                        </div>
+                                        <div class="other-cc">
+                                            <span class="badge-text"></span>
+                                            <div class="icon-arrow">
+                                                <i class="ri-arrow-drop-right-line"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer border-0">
+                    <div class="env-pb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================
+      START THE MODAL SIDEBAR MENU - guest
+    ==================================== -->
+    <div class="modal sidebarMenu -left -guest fade" id="mdllSidebar-connected" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="welcome_em">
+                        <h2>اهلاً بك في نستطيع<span>.</span></h2>
+                        <p>
+                            جيش من الخبراء يعمل لك ومن اجلك
+                        </p>
+                        <a href="page-connect-wallet.html" class="btn btn-md-size bg-primary text-white rounded-pill">
+                            اتصل بنا
+                        </a>
+                    </div>
+                    <button type="button" class="btn btnClose" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav flex-column -active-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/') }}">
+                                <div class="icon_current">
+                                    <i class="ri-compass-line"></i>
+                                </div>
+                                <div class="icon_active">
+                                    <i class="ri-compass-fill"></i>
+                                </div>
+                                <span class="title_link">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('services') }}">
+                                <div class="icon_current">
+                                    <i class="ri-home-5-line"></i>
+                                </div>
+                                <div class="icon_active">
+                                    <i class="ri-home-5-fill"></i>
+                                </div>
+                                <span class="title_link">Services</span>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('about') }}">
+                                <div class="icon_current">
+                                    <i class="ri-pages-line"></i>
+                                </div>
+                                <div class="icon_active">
+                                    <i class="ri-pages-fill"></i>
+                                </div>
+                                <span class="title_link">About US</span>
+
+                                
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('contact') }}">
+                                <div class="icon_current">
+                                    <i class="ri-layout-2-line"></i>
+                                </div>
+                                <div class="icon_active">
+                                    <i class="ri-layout-2-fill"></i>
+                                </div>
+                                <span class="title_link">Contact US</span>
+
+                            </a>
+                        </li>
+
+                        <label class="title__label">other</label>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('help') }}">
+                                <div class="icon_current">
+                                    <i class="ri-questionnaire-line"></i>
+                                </div>
+                                <div class="icon_active">
+                                    <i class="ri-questionnaire-fill"></i>
+                                </div>
+                                <span class="title_link">Help Center</span>
+                            </a>
+                        </li>
+
+                       
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <div class="em_darkMode_menu">
+                        <label class="text" for="switchDark2">
+                            <h3>Dark Mode</h3>
+                            <p>Browsing in night mode</p>
+                        </label>
+                        <label class="switch_toggle toggle_lg theme-switch" for="switchDark2">
+                            <input type="checkbox" class="switchDarkMode theme-switch" id="switchDark2"
+                                aria-describedby="switchDark2" aria-describedby="switchDark2">
+                            <span class="handle"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================================
+      START THE CREATE STORY MODAL
+    ==================================== -->
+    <div class="modal sidebarMenu -left --fullScreen modal-filter fade" id="mdllAddStory" tabindex="-1"
+        aria-labelledby="sidebarMenuLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="title-modal">Create Story</h1>
+                    <button type="button" class="btn btnClose" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="un-create-collectibles bg-white p-0">
+                        <div class="form-group upload-form">
+                            <h2>Upload file</h2>
+                            <p>Choose your file to upload</p>
+                            <div class="upload-input-form">
+                                <input type="file">
+                                <div class="content-input">
+                                    <div class="icon"><i class="ri-upload-cloud-line"></i></div>
+                                    <span>PNG, GIF, JPG, MP4 . Max 5 mb.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group icon-right">
+                            <label>Add Link</label>
+                            <div class="input_group">
+                                <input type="url" class="form-control" placeholder='e. g. "www.example.com"'>
+                                <div class="icon">
+                                    <i class="ri-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Link Text</label>
+                            <div class="inpust_group">
+                                <input type="text" class="form-control" placeholder='e. g. "INSTALL APP"'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center border-0 pt-2">
+                    <div class="footer-pages-forms">
+                        <div class="content">
+                            <div class="links-clear-data">
+                                <button type="button" class="btn link-clear" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">
+                                    <i class="ri-close-circle-line"></i>
+                                    <span>Cancel</span>
+                                </button>
+                            </div>
+                            <a href="page-home-stories.html" class="btn btn-bid-items">
+                                <p>Create Story</p>
+                                <div class="ico">
+                                    <i class="ri-arrow-drop-right-line"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================================
+      START STATUS CONNECTION
+    ==================================== -->
+    <div class="d-flex justify-content-center">
+        <div class="toast status-connection" role="alert" aria-live="assertive" aria-atomic="true"></div>
+    </div>
+
 
 
 
@@ -110,82 +393,25 @@
             localStorage: false,
             paginationArrows: false,
             paginationArrows: true,
-            stories: [{
-                    id: 'userOne',
-                    photo: 'images/avatar/22.jpg',
-                    name: 'MelonPixel⚡',
-                    link: '',
-                    lastUpdated: 1646579345,
-                    items: [
-                        buildItem('1', 'photo', 4, 'images/other/29.jpg', '', 'page-my-profile.html',
-                            'Visit My Profile', 1646665745, false),
-                        buildItem('2', 'photo', 4, 'images/other/31.jpg', '',
-                            'https://themeforest.net/item/unic-nft-mobile-template/36083774',
-                            'Get it Now 🚀', 1646665745, false),
-                        buildItem('3', 'photo', 4, 'images/other/2.jpg', '', '', '', 1646838545, false),
-                    ],
-                },
-                {
-                    id: 'userTwo',
-                    photo: 'images/avatar/14.jpg',
-                    name: 'Camillo Ferrari',
-                    link: '',
-                    lastUpdated: 1646673856,
-                    items: [
-                        buildItem('4', 'photo', 4, 'images/other/25.jpg', '', '', '', 1646665745, false),
-                    ],
-                },
-                {
-                    id: 'userThree',
-                    photo: 'images/avatar/8.png',
-                    name: 'Pingu',
-                    link: '',
-                    lastUpdated: 1646753056,
-                    items: [
-                        buildItem('5', 'photo', 4, 'images/other/4.jpg', '', '', '', 1646753056, false),
-                        buildItem('6', 'photo', 4, 'images/other/11.jpg', '', '', '', 1646709856, false),
-                    ],
-                },
-                {
-                    id: 'userFour',
-                    photo: 'images/avatar/3.jpg',
-                    name: 'Julian Co.',
-                    link: '',
-                    lastUpdated: 1646789056,
-                    items: [
-                        buildItem('7', 'photo', 4, 'images/other/10.jpg', '', '', '', 1646789056, false),
-                    ],
-                },
-                {
-                    id: 'userFive',
-                    photo: 'images/avatar/5.png',
-                    name: 'Tito_Calab',
-                    link: '',
-                    lastUpdated: 1646803456,
-                    items: [
-                        buildItem('8', 'photo', 4, 'images/other/17.jpg', '', '', '', 1646803456, false),
-                    ],
-                },
-                {
-                    id: 'userSix',
-                    photo: 'images/avatar/7.jpg',
-                    name: 'DoggieBoy',
-                    link: '',
-                    lastUpdated: 1646889856,
-                    items: [
-                        buildItem('9', 'photo', 4, 'images/other/28.jpg', '', '', '', 1646889856, false),
-                    ],
-                },
-                {
-                    id: 'userSeven',
-                    photo: 'images/avatar/9.jpg',
-                    name: 'Leda Beneventi',
-                    link: '',
-                    lastUpdated: 1647321856,
-                    items: [
-                        buildItem('10', 'photo', 4, 'images/other/29.jpg', '', '', '', 1647321856, false),
-                    ],
-                }
+
+            stories: [
+
+                @foreach (\App\Models\Story::all() as $story)
+
+                    {
+                        id: '{{ $story->id }}',
+                        photo: "{{ asset($story->avater) }}",
+                        name: '{{ $story->name }}',
+                        link: '',
+                        lastUpdated: 1646673856,
+                        items: [
+                            buildItem('{{ $story->id }}', 'photo', {{ $story->id }},
+                                "{{ asset($story->image) }}", '', '', '',
+                                1646665745___ blade_brace_23___, false),
+                        ],
+                    },
+                @endforeach
+
             ],
         });
     </script>

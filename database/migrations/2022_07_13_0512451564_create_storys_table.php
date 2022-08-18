@@ -17,10 +17,11 @@ return new class extends Migration
     {
         Schema::create('storys', function (Blueprint $table) { 
             $table->bigIncrements('id');
-            $table->string('title');
+            $table->string('name');
             $table->text('content');
-            $table->timestamps();
-            
+            $table->text('image');
+            $table->text('avater');
+            $table->timestamps();           
        });
     }
 

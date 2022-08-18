@@ -21,7 +21,7 @@ class StorysController extends Controller
     public function index()
     {
        $storys = Story::all();
-		return view('Admin/Storys.index',compact('storys'));
+		  return view('Admin/Storys.index',compact('storys'));
     }
 
     /**
@@ -34,7 +34,7 @@ class StorysController extends Controller
 		//$this->authorize('create', Story::class);
 		
 		
-        return view('Admin/Storys.create');
+        return view('admin.owner.create');
     }
 
     /**

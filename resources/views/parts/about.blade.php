@@ -6,7 +6,7 @@
                         </p>
                 </div>
                 <div class="un-block-right">
-                    <a href="page-search-random.html" class="icon-back" aria-label="iconBtn">
+                    <a href="{{ route('about') }}" class="icon-back" aria-label="iconBtn">
                         <i class="ri-arrow-drop-right-line"></i>
                     </a>
                 </div>
