@@ -21,7 +21,7 @@
     <link rel="apple-touch-icon" href="{{ asset('images/favicon/icon-96x96.png') }}">
 
     <!-- CSS FILES -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css?v=3') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css?v=4') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/remixicon.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/swiper/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/zuck_stories/zuck.min.css') }}">
@@ -54,6 +54,10 @@
     </section>
     <!-- START WRAPPER -->
     <div id="wrapper">
+        <div class="c-form show-d">
+
+            aaaaaaaaaaaaaaaa
+        </div>
         <!-- START CONTENT -->
         <div id="content">
 
@@ -62,10 +66,7 @@
             @yield('content')
 
         </div>
-        <div class="c-form show-d">
-        
-        aaaaaaaaaaaaaaaa
-        </div>
+
         @include('layouts.parts.footer')
     </div>
 
@@ -417,7 +418,7 @@
                         items: [
                             buildItem('{{ $story->id }}', 'photo', 10,
                                 "{{ asset($story->image) }}", '', '', '',
-                                1646665745{{ $story->id }} , false),
+                                1646665745___ blade_brace_31___, false),
                         ],
                     },
                 @endforeach
