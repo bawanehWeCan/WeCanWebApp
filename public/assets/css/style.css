@@ -19583,7 +19583,7 @@ hr {
     }
     
     #content {
-        width: calc(100% - 520px);
+        width: calc(100% - 620px);
         float: left;
     }
     
@@ -19597,7 +19597,8 @@ hr {
         display: none;
     }
     .c-form{
-        width: 200px;
+        width: 300px;
         float:left;
+        margin-top: 250px;
     }
 }
