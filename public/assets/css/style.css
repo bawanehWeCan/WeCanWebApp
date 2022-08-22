@@ -19585,6 +19585,7 @@ hr {
     #content {
         width: calc(100% - 620px);
         float: left;
+        margin-left: 300px;
     }
     
     button.btn.btnClose {
@@ -19598,7 +19599,15 @@ hr {
     }
     .c-form{
         width: 300px;
-        float:left;
-        margin-top: 40px;
+        /* float: left; */
+        /* margin-top: 40px; */
+        position: fixed;
+        left: 0;
+        z-index: 9999999;
+        top: 0;
+        bottom: 0;
+        overflow-y: scroll;
+        background: #fff;
+        padding: 50px 0;
     }
 }
