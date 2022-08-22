@@ -19610,4 +19610,8 @@ hr {
         background: #fff;
         padding: 50px 0;
     }
+    .default.heade-sticky{
+        height: 0 m !important;
+        max-height: 0 !important;
+    }
 }
