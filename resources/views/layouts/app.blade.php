@@ -177,7 +177,7 @@
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <a href="{{ url('/') }}">
-                    <div class="un-item-logo show-d">
+                    <div class="un-item-logo show-d" style="padding:30px">
                         <img class="logo-img light-mode" src="{{ asset('images/logo_b.svg') }}" alt="">
                         <img class="logo-img dark-mode" src="{{ asset('images/logo-white.svg') }}" alt="">
                     </div>
