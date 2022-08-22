@@ -19564,3 +19564,25 @@ hr {
 .pricing-button.is-featured:active {
   background-color: #269aff;
 }
+
+
+@media screen and (min-width: 900px) {
+    div#mdllSidebar-connected {
+        display: block !important;
+        width: 320px !important;
+    }
+    
+    .sidebarMenu.-left.fade .modal-dialog {
+        left: auto;
+        right: 0;
+    }
+    
+    #content {
+        width: calc(100% - 320px);
+        float: left;
+    }
+    
+    button.btn.btnClose {
+        display: none;
+    }
+}
