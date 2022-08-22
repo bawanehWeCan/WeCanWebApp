@@ -176,10 +176,12 @@
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="show-d">
-                    <img class="logo-img light-mode" src="{{ asset('images/logo_b.svg') }}" alt="">
-                    <img class="logo-img dark-mode" src="{{ asset('images/logo-white.svg') }}" alt="">
-                </div>
+                <a href="{{ url('/') }}">
+                    <div class="un-item-logo show-d">
+                        <img class="logo-img light-mode" src="{{ asset('images/logo_b.svg') }}" alt="">
+                        <img class="logo-img dark-mode" src="{{ asset('images/logo-white.svg') }}" alt="">
+                    </div>
+                </a>
                 <div class="modal-header">
                     <div class="welcome_em">
                         <h2>اهلاً بك في نستطيع<span>.</span></h2>
@@ -229,7 +231,7 @@
                                 </div>
                                 <span class="title_link">من نحن</span>
 
-                                
+
                             </a>
                         </li>
 
@@ -260,7 +262,7 @@
                             </a>
                         </li>
 
-                       
+
                     </ul>
                 </div>
                 <div class="modal-footer">
@@ -411,7 +413,7 @@
                         items: [
                             buildItem('{{ $story->id }}', 'photo', 10,
                                 "{{ asset($story->image) }}", '', '', '',
-                                1646665745{{ $story->id }}, false),
+                                1646665745___ blade_brace_31___, false),
                         ],
                     },
                 @endforeach
