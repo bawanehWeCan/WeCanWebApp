@@ -21,7 +21,7 @@
     <link rel="apple-touch-icon" href="{{ asset('images/favicon/icon-96x96.png') }}">
 
     <!-- CSS FILES -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css?v=2') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css?v=3') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/remixicon.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/swiper/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/zuck_stories/zuck.min.css') }}">
@@ -61,6 +61,10 @@
 
             @yield('content')
 
+        </div>
+        <div class="c-form show-d">
+        
+        aaaaaaaaaaaaaaaa
         </div>
         @include('layouts.parts.footer')
     </div>
