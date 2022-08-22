@@ -1,7 +1,7 @@
 <!-- ===================================
           START THE BOTTOM NAVIGATION
         ==================================== -->
-<footer class="un-bottom-navigation filter-blur">
+<footer class="un-bottom-navigation filter-blur hide-d">
     <div class="em_body_navigation border-0 ">
         <div class="item_link">
             <a href="https://wa.me/+962780190006/?text" class="btn btn_navLink" aria-label="btnNavigation">
