@@ -3,7 +3,7 @@
             ==================================== -->
 <header class="default heade-sticky">
     <a href="{{ url('/') }}">
-        <div class="un-item-logo">
+        <div class="un-item-logo hide-d">
             <img class="logo-img light-mode" src="{{ asset('images/logo_b.svg') }}" alt="">
             <img class="logo-img dark-mode" src="{{ asset('images/logo-white.svg') }}" alt="">
         </div>

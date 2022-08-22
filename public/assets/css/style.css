@@ -19565,11 +19565,16 @@ hr {
   background-color: #269aff;
 }
 
+.show-d{
+    display:none;
+}
+
 
 @media screen and (min-width: 900px) {
     div#mdllSidebar-connected {
         display: block !important;
         width: 320px !important;
+        left: auto;
     }
     
     .sidebarMenu.-left.fade .modal-dialog {
@@ -19583,6 +19588,12 @@ hr {
     }
     
     button.btn.btnClose {
+        display: none;
+    }
+    .show-d{
+        display: block;
+    }
+    .hide-d{
         display: none;
     }
 }

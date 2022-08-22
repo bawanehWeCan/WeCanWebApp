@@ -21,7 +21,7 @@
     <link rel="apple-touch-icon" href="{{ asset('images/favicon/icon-96x96.png') }}">
 
     <!-- CSS FILES -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css?v=1') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css?v=2') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/remixicon.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/swiper/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/zuck_stories/zuck.min.css') }}">
@@ -176,6 +176,10 @@
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
+                <div class="show-d">
+                    <img class="logo-img light-mode" src="{{ asset('images/logo_b.svg') }}" alt="">
+                    <img class="logo-img dark-mode" src="{{ asset('images/logo-white.svg') }}" alt="">
+                </div>
                 <div class="modal-header">
                     <div class="welcome_em">
                         <h2>اهلاً بك في نستطيع<span>.</span></h2>
