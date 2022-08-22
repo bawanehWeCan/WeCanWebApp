@@ -20,7 +20,7 @@
                     </div>
                     <div class="un-block-right">
                         <a href="page-best-seller.html" class="icon-back" aria-label="iconBtn">
-                            <i class="ri-arrow-drop-right-line"></i>
+                            <i class="ri-arrow-drop-left-line"></i>
                         </a>
                     </div>
                 </div>
