@@ -24,10 +24,7 @@ return [
                 'path' => '/images/icons/icon-128x128.png',
                 'purpose' => 'any'
             ],
-            '144x144' => [
-                'path' => '/images/icons/icon-144x144.png',
-                'purpose' => 'any'
-            ],
+            
             '152x152' => [
                 'path' => '/images/icons/icon-152x152.png',
                 'purpose' => 'any'
