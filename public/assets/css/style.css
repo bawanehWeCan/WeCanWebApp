@@ -19615,3 +19615,32 @@ hr {
         display: none;
     }
 }
+
+
+.un-title-default .text p {
+    font-size: 18px;
+}
+
+.sidebarMenu.-left .modal-dialog .modal-content .modal-body .nav .nav-item .nav-link .title_link {
+    font-size: 19px;
+}
+
+.about-section .descriptio h2 {
+    font-size: 2em;
+}
+
+.about-section .descriptio p {
+    font-size: 16px;
+}
+
+.form-group label {
+    font-size: 18px;
+}
+
+.size-11.color-text.form-text {
+    font-size: 14px !important;
+}
+
+button.btn.effect-click.w-100.btn-md-size.border.border-solid.border-snow.color-text.rounded-pill {
+    font-size: 16px;
+}
