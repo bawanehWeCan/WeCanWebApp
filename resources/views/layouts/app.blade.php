@@ -297,7 +297,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <ul class="nav flex-column -active-links">
+                    <ul class="nav flex-column ">
                         <li class="nav-item">
                             <a class="nav-link @if( request()->routeIs('1') ) active @endif" href="{{ url('home') }}">
                                 <div class="icon_current">
