@@ -34477,17 +34477,18 @@ button.btn.effect-click.w-100.btn-md-size.border.border-solid.border-snow.color-
      right:15px
     }
     .item-card-nft .un-info-card .block-left h4 {
-     font-size:18px;
+     font-size: 18px;
      font-weight:500;
-     color:var(--dark);
+     color:
+     var(--dark);
      margin-bottom:5px;
-     white-space:nowrap;
-     overflow:hidden;
-     text-overflow:ellipsis
+     white-space: unset;
+     overflow: auto;
+     text-overflow: unset;
     }
     @media(max-width: 575.98px) {
      .item-card-nft .un-info-card .block-left h4 {
-      width:33vw
+      width: 47vw;
      }
     }
     .item-card-nft .un-info-card .block-left .user {
