@@ -1,10 +1,7 @@
 @extends('layouts.home')
 
 @section('content')
-    <!-- START WRAPPER -->
-    <div id="wrapper">
-        <!-- START CONTENT -->
-        <div id="content">
+
             <!--
             ===================================
                      START THE HEADER
@@ -270,6 +267,5 @@
                     </div>
                 </div>
             </section>
-        </div>
-    </div>
+
 @endsection
