@@ -299,7 +299,7 @@
                 <div class="modal-body">
                     <ul class="nav flex-column ">
                         <li class="nav-item">
-                            <a class="nav-link @if( request()->routeIs('1') ) active @endif" href="{{ url('home') }}">
+                            <a class="nav-link @if( request()->routeIs('home') ) active @endif" href="{{ url('home') }}">
                                 <div class="icon_current">
                                     <i class="ri-compass-line"></i>
                                 </div>
@@ -310,7 +310,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('services') }}">
+                            <a class="nav-link @if( request()->routeIs('services') ) active @endif" href="{{ route('services') }}">
                                 <div class="icon_current">
                                     <i class="ri-home-5-line"></i>
                                 </div>
@@ -322,7 +322,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('about') }}">
+                            <a class="nav-link @if( request()->routeIs('about') ) active @endif" href="{{ route('about') }}">
                                 <div class="icon_current">
                                     <i class="ri-pages-line"></i>
                                 </div>
@@ -336,7 +336,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('contact') }}">
+                            <a class="nav-link @if( request()->routeIs('contact') ) active @endif" href="{{ route('contact') }}">
                                 <div class="icon_current">
                                     <i class="ri-layout-2-line"></i>
                                 </div>
@@ -351,7 +351,7 @@
                         <label class="title__label">اخرى</label>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('help') }}">
+                            <a class="nav-link @if( request()->routeIs('help') ) active @endif" href="{{ route('help') }}">
                                 <div class="icon_current">
                                     <i class="ri-questionnaire-line"></i>
                                 </div>
