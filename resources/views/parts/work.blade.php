@@ -17,7 +17,7 @@ START THE CONTENT
                 <div class="swiper cardGradual">
                     <div class="swiper-wrapper">
                         @foreach ( \App\Models\Project::all() as $project )
-                        
+
                         <div class="swiper-slide">
                             <!-- item-card-gradual -->
                             <div class="item-card-gradual">
@@ -29,9 +29,7 @@ START THE CONTENT
                                             <img class="img-cover" src="{{ asset( $project->image ) }}" alt="image NFT">
                                         </picture>
 
-                                        <div class="icon-type">
-                                            <i class="ri-vidicon-line"></i>
-                                        </div>
+
                                         <div class="countdown-time">
                                             <span>{{ $project->service?->name }}</span>
                                         </div>

@@ -15004,16 +15004,19 @@ fieldset:disabled .btn {
  align-content:center
 }
 .item-card-gradual .footer-card .starting-bad h4 {
- font-size:16px;
+ font-size: 19px;
  font-weight:600;
- color:var(--dark);
- margin-bottom:3px
+ color:
+ var(--dark);
+ margin-bottom: 15px;
 }
 .item-card-gradual .footer-card .starting-bad span {
- font-size:13px;
- color:var(--secondary);
+ font-size: 17px;
+ color:
+ var(--secondary);
  font-weight:400;
- display:block
+ display:
+ block
 }
 .btn-like-click {
  display:inline-flex;
@@ -15032,11 +15035,17 @@ fieldset:disabled .btn {
  transition:.3s
 }
 .btn-like-click .btnLike {
- position:relative;
- overflow:hidden;
- display:inline-flex;
- align-items:center;
- justify-content:center
+ position:
+ relative;
+ overflow:
+ hidden;
+ display:
+ inline-flex;
+ align-items:
+ center;
+ justify-content:
+ center;
+ display: none;
 }
 .btn-like-click .btnLike input {
  position:absolute;
@@ -15134,7 +15143,9 @@ fieldset:disabled .btn {
 .unSwiper-cards .content-cards-NFTs .swiper-slide .item-card-gradual {
  width:100%;
  margin-left:20px;
- text-align:left
+ text-align:
+ left;
+ min-height: 330px;
 }
 .unSwiper-cards .content-cards-NFTs .swiper-slide:last-child {
  margin-right:20px
