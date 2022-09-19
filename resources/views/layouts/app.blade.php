@@ -21,7 +21,7 @@
     <link rel="apple-touch-icon" href="{{ asset('images/favicon/icon-96x96.png') }}">
 
     <!-- CSS FILES -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css?v=18') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css?v=19') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/remixicon.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/swiper/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/zuck_stories/zuck.min.css') }}">
@@ -118,16 +118,14 @@
                     </div>
                     <div class="form-group">
                         <label>بريدك الإلكتروني</label>
-                        <input type="email" class="form-control" value=""
-                            placeholder="ادخل بريدك الإلتكروني">
+                        <input type="email" class="form-control" value="" placeholder="ادخل بريدك الإلتكروني">
                     </div>
 
                     <div class="bk-social-networks">
                         <div class="form-group with_icon">
                             <label>رقم الهاتف</label>
                             <div class="input_group">
-                                <input type="text" class="form-control"
-                                    placeholder="رقم الهاتف مصحوب برمز الدولة">
+                                <input type="text" class="form-control" placeholder="رقم الهاتف مصحوب برمز الدولة">
                                 <div class="icon">
                                     <i class="ri-phone-fill"></i>
                                 </div>
@@ -299,7 +297,8 @@
                 <div class="modal-body">
                     <ul class="nav flex-column ">
                         <li class="nav-item">
-                            <a class="nav-link @if( request()->routeIs('home') ) active @endif" href="{{ url('home') }}">
+                            <a class="nav-link @if (request()->routeIs('home')) active @endif"
+                                href="{{ url('home') }}">
                                 <div class="icon_current">
                                     <i class="ri-compass-line"></i>
                                 </div>
@@ -310,7 +309,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @if( request()->routeIs('services') ) active @endif" href="{{ route('services') }}">
+                            <a class="nav-link @if (request()->routeIs('services')) active @endif"
+                                href="{{ route('services') }}">
                                 <div class="icon_current">
                                     <i class="ri-home-5-line"></i>
                                 </div>
@@ -322,7 +322,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @if( request()->routeIs('about') ) active @endif" href="{{ route('about') }}">
+                            <a class="nav-link @if (request()->routeIs('about')) active @endif"
+                                href="{{ route('about') }}">
                                 <div class="icon_current">
                                     <i class="ri-pages-line"></i>
                                 </div>
@@ -336,7 +337,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link @if( request()->routeIs('contact') ) active @endif" href="{{ route('contact') }}">
+                            <a class="nav-link @if (request()->routeIs('contact')) active @endif"
+                                href="{{ route('contact') }}">
                                 <div class="icon_current">
                                     <i class="ri-layout-2-line"></i>
                                 </div>
@@ -351,7 +353,8 @@
                         <label class="title__label">اخرى</label>
 
                         <li class="nav-item">
-                            <a class="nav-link @if( request()->routeIs('help') ) active @endif" href="{{ route('help') }}">
+                            <a class="nav-link @if (request()->routeIs('help')) active @endif"
+                                href="{{ route('help') }}">
                                 <div class="icon_current">
                                     <i class="ri-questionnaire-line"></i>
                                 </div>
@@ -513,7 +516,7 @@
                         items: [
                             buildItem('{{ $story->id }}', 'photo', 10,
                                 "{{ asset($story->image) }}", '', '', '',
-                                1646665745{{ $story->id }}, false),
+                                1646665745___ blade_brace_31___, false),
                         ],
                     },
                 @endforeach

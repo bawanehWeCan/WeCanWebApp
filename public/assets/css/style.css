@@ -3710,7 +3710,9 @@ fieldset:disabled .btn {
  display:none
 }
 .tab-content>.active {
- display:block
+ display:
+ block;
+ font-size: 17px;
 }
 .navbar {
  position:relative;
@@ -15396,10 +15398,13 @@ fieldset:disabled .btn {
  padding:20px
 }
 .un-details-collectibles .head .txt-price-coundown .price h2 {
- font-size:13px;
- color:var(--secondary);
+ font-size: 18px;
+ color:
+ var(--secondary);
  margin:0;
  margin-bottom:5px
+;
+ line-height: 30px;
 }
 .un-details-collectibles .head .txt-price-coundown .price p {
  font-size:24px;
@@ -15425,8 +15430,9 @@ fieldset:disabled .btn {
  padding:20px
 }
 .un-details-collectibles .body .description p {
- font-size:15px;
- color:var(--secondary)
+ font-size: 17px;
+ color:
+ var(--secondary)
 }
 .un-details-collectibles .body .nav-users-profile .nav-item .nav-link {
  padding:0;
@@ -17606,15 +17612,20 @@ header.default.header-light .un-block-right .menu-sidebar .btn svg rect {
  width:100%
 }
 .nav-pilled-tab .nav-item .nav-link {
- background-color:transparent;
- color:var(--secondary);
- font-size:13px;
+ background-color:
+ transparent;
+ color:
+ var(--secondary);
+ font-size: 16px;
  font-weight:500;
  min-width:65px;
  height:36px;
- display:inline-flex;
- align-items:center;
- justify-content:center;
+ display:
+ inline-flex;
+ align-items:
+ center;
+ justify-content:
+ center;
  border-radius:10px;
  -webkit-transition:.25s;
  -moz-transition:.25s;
