@@ -18380,8 +18380,9 @@ header.default.header-light .un-block-right .menu-sidebar .btn svg rect {
  color:#b3b1c3
 }
 .wrapper-stories .story {
- width:66px !important;
- max-width:inherit !important;
+ width: 66px !important;
+ max-width:
+ inherit !important;
  margin-right:18px !important
 }
 .wrapper-stories .story:first-child {
@@ -18424,13 +18425,18 @@ header.default.header-light .un-block-right .menu-sidebar .btn svg rect {
  line-height:normal !important
 }
 .wrapper-stories .story>.item-link>.info .name {
- font-size:12px;
- text-overflow:ellipsis;
- overflow:hidden;
- white-space:nowrap;
- color:var(--dark);
- text-shadow:none !important;
- box-shadow:none !important
+ font-size: 12px;
+ text-overflow: unset;
+ overflow:
+ hidden;
+ white-space: unset;
+ font-weight: bold;
+ color:
+ var(--dark);
+ text-shadow:
+ none !important;
+ box-shadow:
+ none !important
 }
 .wrapper-stories .story>.item-link>.info .name a {
  color:var(--dark)
