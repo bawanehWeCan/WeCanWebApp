@@ -52,7 +52,105 @@
     <section class="loader-page" id="loaderPage">
         <div class="spinner_flash"></div>
     </section>
+
     <!-- START WRAPPER -->
+
+    <div class="c-form show-d">
+
+
+        <section class="about-section">
+            <div class="un-navMenu-default without-icon py-0">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link bg-snow border-0" href="javascript:void(0)">
+                            <div class="item-content-link">
+                                <div class="icon color-primary w-auto">
+                                    <i class="ri-whatsapp-line"></i>
+                                </div>
+                                <h3 class="link-title">تواصل معنا من خلال واتساب</h3>
+                            </div>
+                            <div class="other-cc">
+                                <span class="badge-text"></span>
+                                <div class="icon-arrow">
+                                    <i class="ri-arrow-drop-left-line"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-0">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <div class="item-content-link">
+                                <div class="icon color-green w-auto">
+                                    <i class="ri-phone-line"></i>
+                                </div>
+                                <h3 class="link-title"> +962780190006</h3>
+                            </div>
+                            <div class="other-cc">
+                                <span class="badge-text"></span>
+                                <div class="icon-arrow">
+                                    <i class="ri-arrow-drop-left-line"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="descriptio">
+                <h2>ارسل لنا</h2>
+                <p>
+                    قم بتعبئة النموذج التالي وسيقوم فريقنا بالإتصال بك في اقرب وقت ممكن
+                </p>
+            </div>
+            <div class="padding-20 form-edit-profile bg-white">
+                <div class="form-group">
+                    <label>الإسم الكامل</label>
+                    <input type="text" class="form-control" value="" placeholder="الإسم الكامل">
+                    <div class="size-11 color-text form-text">سنكون سعداء بالتعرف عليك</div>
+                </div>
+                <div class="form-group">
+                    <label>عنوان الرسالة</label>
+                    <input type="text" class="form-control" placeholder="عنوان رسالتك">
+                </div>
+                <div class="form-group">
+                    <label>محتوى الرسالة</label>
+                    <textarea class="form-control" rows="3" placeholder="اخبرنا بطلبك بشكل بسيط"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>بريدك الإلكتروني</label>
+                    <input type="email" class="form-control" value="" placeholder="ادخل بريدك الإلتكروني">
+                </div>
+
+                <div class="bk-social-networks">
+                    <div class="form-group with_icon">
+                        <label>رقم الهاتف</label>
+                        <div class="input_group">
+                            <input type="text" class="form-control" placeholder="رقم الهاتف مصحوب برمز الدولة">
+                            <div class="icon">
+                                <i class="ri-phone-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group with_icon">
+                        <label>موقعك الإلكتروني</label>
+                        <div class="input_group">
+                            <input type="text" class="form-control" placeholder="موقعك الإلكتروني ان وجد">
+                            <div class="icon">
+                                <i class="ri-global-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button"
+                    class="btn effect-click w-100 btn-md-size border border-solid border-snow color-text rounded-pill">
+                    ارسال
+                </button>
+
+            </div>
+
+        </section>
+    </div>
     <div id="wrapper">
         <!-- START CONTENT -->
         <div id="content">
@@ -62,7 +160,7 @@
             @yield('content')
 
         </div>
-    
+
         {{-- @include('layouts.parts.footer') --}}
     </div>
 
@@ -226,7 +324,7 @@
                                 </div>
                                 <span class="title_link">من نحن</span>
 
-                                
+
                             </a>
                         </li>
 
@@ -257,7 +355,7 @@
                             </a>
                         </li>
 
-                       
+
                     </ul>
                 </div>
                 <div class="modal-footer">
