@@ -278,15 +278,12 @@
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <div class="welcome_em">
-                        <h2>اهلاً بك في نستطيع<span>.</span></h2>
-                        <p>
-                            جيش من الخبراء يعمل لك ومن اجلك
-                        </p>
-                        <a href="{{ route('contact') }}" class="btn btn-md-size bg-primary text-white rounded-pill">
-                            اتصل بنا
-                        </a>
-                    </div>
+                    <a href="{{ url('/') }}">
+                        <div class="un-item-logo hide-d">
+                            <img class="logo-img light-mode" src="{{ asset('images/logo_b.svg') }}" alt="">
+                            <img class="logo-img dark-mode" src="{{ asset('images/logo-white.svg') }}" alt="">
+                        </div>
+                    </a>
                     <button type="button" class="btn btnClose" data-bs-dismiss="modal" aria-label="Close">
                         <i class="ri-close-fill"></i>
                     </button>
