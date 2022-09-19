@@ -5,7 +5,7 @@
     <div id="wrapper">
         <!-- START CONTENT -->
         <div id="content">
-            <!-- 
+            <!--
             ===================================
                      START THE HEADER
             ===================================
@@ -17,12 +17,12 @@
                     </a>
                     <h1>{{ $service->name }}</h1>
                 </div>
-                 
+
                 <div class="un-block-right">
-                   
+
                     <div class="un-user-profile">
                         <div class="em_darkMode_menu">
-            
+
                             <a  href="{{ url('/') }}">
                                 <div class="btn btnCircle_default">
                                     <i class="ri-home-5-line"></i>
@@ -46,12 +46,12 @@
                     </div>
                 </div>
             </header>
-            
-            
-            
-            
-         
-                 
+
+
+
+
+
+
             <div class="space-sticky"></div>
             <!-- ===================================
                           START THE ACTIIVITY PAGE
@@ -175,9 +175,6 @@
                                                                                 alt="image NFT">
                                                                         </picture>
 
-                                                                        <div class="icon-type">
-                                                                            <i class="ri-vidicon-line"></i>
-                                                                        </div>
 
                                                                     </div>
                                                                 </a>
@@ -223,8 +220,8 @@
                             <div class="panel pricing-table">
 
                                 @foreach (\App\Models\Price::all() as $price )
-                                    
-                                
+
+
                                     <div class="pricing-plan">
                                         <img src="{{ asset( $price->image ) }}" alt=""
                                             class="pricing-img">
