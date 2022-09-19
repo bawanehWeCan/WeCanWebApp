@@ -14772,15 +14772,18 @@ fieldset:disabled .btn {
  object-fit:cover
 }
 .item-card-nft .counterdown {
- position:absolute;
+ position:
+ absolute;
  top:15px;
  left:15px;
  padding:8px 12px;
  border-radius:50px;
- background-color:var(--white);
- font-size:13px;
+ background-color:
+ var(--white);
+ font-size: 16px;
  font-weight:500;
- color:var(--dark)
+ color:
+ var(--dark)
 }
 .item-card-nft .un-info-card {
  background-color:
@@ -14847,20 +14850,22 @@ fieldset:disabled .btn {
  text-align:right
 }
 .item-card-nft .un-info-card .block-right h6 {
- font-size:13px;
- color:var(--secondary);
+ font-size: 20px;
+ color:
+ var(--secondary);
  font-weight:500;
- display:block;
+ display:
+ block;
  margin-bottom:3px
 }
 .item-card-nft .un-info-card .block-right p {
- font-size:15px;
+ font-size: 21px;
  color:#3eca76;
  font-weight:500;
  margin:0
 }
 .item-card-nft .un-info-card .block-right p span {
- font-size:13px;
+ font-size: inherit;
  margin-right:3px
 }
 .item-card-nft.--swiper .block-left h4 {
@@ -17147,16 +17152,22 @@ header.default.header-light .un-block-right .menu-sidebar .btn svg rect {
  margin:0
 }
 .un-title-default .un-block-right .icon-back {
- width:30px;
- height:30px;
- display:inline-flex;
- align-items:center;
- justify-content:center;
- font-size:22px;
- color:var(--dark);
- background-color:var(--gray-200);
+ width: 40px;
+ height: 40px;
+ display:
+ inline-flex;
+ align-items:
+ center;
+ justify-content:
+ center;
+ font-size: 44px;
+ color:
+ var(--dark);
+ background-color:
+ var(--gray-200);
  border-radius:50%;
- text-decoration:none !important
+ text-decoration:
+ none !important
 }
 .un-intro-card {
  padding:20px
