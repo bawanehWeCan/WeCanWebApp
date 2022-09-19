@@ -277,14 +277,14 @@
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
-
+                <a href="{{ url('/') }}" style="padding: 30px;">
+                    <div class="un-item-logo ">
+                        <img class="logo-img light-mode" src="{{ asset('images/logo_b.svg') }}" alt="">
+                        <img class="logo-img dark-mode" src="{{ asset('images/logo-white.svg') }}" alt="">
+                    </div>
+                </a>
                 <div class="modal-body">
-                    <a href="{{ url('/') }}">
-                        <div class="un-item-logo ">
-                            <img class="logo-img light-mode" src="{{ asset('images/logo_b.svg') }}" alt="">
-                            <img class="logo-img dark-mode" src="{{ asset('images/logo-white.svg') }}" alt="">
-                        </div>
-                    </a>
+
                     <ul class="nav flex-column -active-links">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/') }}">
