@@ -516,7 +516,7 @@
                         items: [
                             buildItem('{{ $story->id }}', 'photo', 10,
                                 "{{ asset($story->image) }}", '', '', '',
-                                1646665745___ blade_brace_31___, false),
+                                {{ $story->id }}, false),
                         ],
                     },
                 @endforeach
