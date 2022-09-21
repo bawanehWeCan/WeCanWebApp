@@ -51,3 +51,17 @@ Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'
     Route::delete('/storys/{story}', 'destroy')->name('destroy');
 });
 #storys
+
+
+
+Route::get('send-mail', function () {
+
+    $details = [
+        'title' => 'Mail from wecan.jo',
+        'body' => 'This is for testing email using smtp'
+    ];
+
+    \Mail::to('info@wecan.jo')->send(new \App\Mail\MyTestMail($details));
+
+    dd("Email is Sent.");
+});

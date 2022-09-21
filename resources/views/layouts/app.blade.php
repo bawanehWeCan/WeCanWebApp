@@ -21,11 +21,11 @@
     <link rel="apple-touch-icon" href="{{ asset('images/favicon/icon-96x96.png') }}">
 
     <!-- CSS FILES -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css?v=20') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/remixicon.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/vendors/swiper/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/vendors/zuck_stories/zuck.min.css') }}">
-    <link rel="manifest" href="{{ asset('_manifest.json') }}" />
+    <link rel="stylesheet"  href="{{ asset('assets/css/style.css?v=20') }}">
+    <link rel="stylesheet"  href="{{ asset('assets/css/remixicon.min.css') }}">
+    <link rel="stylesheet"  href="{{ asset('assets/vendors/swiper/swiper-bundle.min.css') }}">
+    <link rel="stylesheet"  href="{{ asset('assets/vendors/zuck_stories/zuck.min.css') }}">
+    <link rel="manifest"    href="{{ asset('_manifest.json') }}" />
 
 
 
