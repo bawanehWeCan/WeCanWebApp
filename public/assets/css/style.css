@@ -39355,3 +39355,10 @@ button.btn.effect-click.w-100.btn-md-size.border.border-solid.border-snow.color-
         font-size: 16px;
     }
 }
+
+
+
+
+html[data-theme=dark] .c-form {
+    background: #232031;
+}
