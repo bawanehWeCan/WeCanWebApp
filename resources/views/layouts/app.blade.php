@@ -370,13 +370,13 @@
                 </div>
                 <div class="modal-footer">
                     <div class="em_darkMode_menu">
-                        <label class="text" for="switchDark2">
+                        <label class="text" for="switchDark">
                             <h3>الوضع المظلم</h3>
                             <p>تصفح في الوضع المظلم</p>
                         </label>
-                        <label class="switch_toggle toggle_lg theme-switch" for="switchDark2">
-                            <input type="checkbox" class="switchDarkMode theme-switch" id="switchDark2"
-                                aria-describedby="switchDark2" aria-describedby="switchDark2">
+                        <label class="switch_toggle toggle_lg theme-switch" for="switchDark">
+                            <input type="checkbox" class="switchDarkMode theme-switch" id="switchDark"
+                                aria-describedby="switchDark2" aria-describedby="switchDark">
                             <span class="handle"></span>
                         </label>
                     </div>
