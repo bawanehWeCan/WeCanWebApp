@@ -39362,3 +39362,7 @@ button.btn.effect-click.w-100.btn-md-size.border.border-solid.border-snow.color-
 html[data-theme=dark] .c-form {
     background: #232031;
 }
+
+#zuck-modal {
+    z-index: 99999999999;
+}
