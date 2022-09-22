@@ -15181,12 +15181,12 @@ fieldset:disabled .btn {
  color:var(--white);
  box-shadow:0 0 0px 6px rgba(34,32,50,.1)
 }
-.unSwiper-cards .swiper-button-next::after {
+.unSwiper-cards .swiper-button-prev::after {
  content:"";
  font-family:remixicon !important;
  font-size:22px
 }
-.unSwiper-cards .swiper-button-prev::after {
+.unSwiper-cards .swiper-button-next::after {
  content:"";
  font-family:remixicon !important;
  font-size:22px
@@ -34863,12 +34863,12 @@ button.btn.effect-click.w-100.btn-md-size.border.border-solid.border-snow.color-
      color:var(--white);
      box-shadow:0 0 0px 6px rgba(34,32,50,.1)
     }
-    .unSwiper-cards .swiper-button-next::after {
+    .unSwiper-cards .swiper-button-prev::after {
      content:"";
      font-family:remixicon !important;
      font-size:22px
     }
-    .unSwiper-cards .swiper-button-prev::after {
+    .unSwiper-cards .swiper-button-next::after {
      content:"";
      font-family:remixicon !important;
      font-size:22px
