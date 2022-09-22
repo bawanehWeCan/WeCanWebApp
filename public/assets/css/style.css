@@ -14928,16 +14928,18 @@ fieldset:disabled .btn {
  margin:15px
 }
 .item-card-gradual .body-card .cover-nft .countdown-time {
- background-color:var(--white);
+ background-color: #d8b855;
  border-radius:50px;
  font-size:13px;
  font-weight:500;
  padding:8px 12px;
  bottom:15px;
  left:15px;
- position:absolute;
- display:inline-block;
- color:var(--dark)
+ position:
+ absolute;
+ display:
+ inline-block;
+ color: #ffffff;
 }
 .item-card-gradual .body-card .title-card-nft {
  display:flex;
