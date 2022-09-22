@@ -14908,9 +14908,10 @@ fieldset:disabled .btn {
 }
 .item-card-gradual .body-card .cover-nft .img-cover {
  width:100%;
- height:170px;
+ height: auto;
  border-radius:15px;
- object-fit:cover
+ object-fit:
+ cover
 }
 .item-card-gradual .body-card .cover-nft .icon-type {
  position:absolute;
