@@ -61,22 +61,6 @@ const _0x38179e = _0x521b;
                 }
             };
         _0x5c821f(), _0x3c3ebc();
-        var _0x432478 = new Swiper(_0x5a8b5a(0xd9), {
-                slidesPerView: "auto",
-                spaceBetween: 0x14,
-                breakpoints: { 0x280: { slidesPerView: 0x2, spaceBetween: 0x14 }, 0x300: { slidesPerView: 0x3, spaceBetween: 0x14 }, 0x3e0: { slidesPerView: 0x3, spaceBetween: 0x0 }, 0x500: { slidesPerView: 0x4, spaceBetween: 0x14 } },
-            }),
-            _0x432478 = new Swiper(_0x5a8b5a(0xdd), {
-                spaceBetween: 0xf,
-                loop: !![],
-                breakpoints: { 0x140: { slidesPerView: 0x1, spaceBetween: 0x14 }, 0x300: { slidesPerView: 0x2, spaceBetween: 0x1e }, 0x3e0: { slidesPerView: 0x2, spaceBetween: 0x14 }, 0x500: { slidesPerView: 0x3, spaceBetween: 0x14 } },
-            }),
-            _0x432478 = new Swiper(_0x5a8b5a(0xd2), {
-                slidesPerView: _0x5a8b5a(0xcf),
-                spaceBetween: 0x0,
-                breakpoints: { 0x3e0: { slidesPerView: 0x2, spaceBetween: 0x14 }, 0x500: { slidesPerView: 0x3, spaceBetween: 0x14 }, 0x5a0: { slidesPerView: 0x4, spaceBetween: 0x14 } },
-                navigation: { nextEl: _0x5a8b5a(0xc6), prevEl: _0x5a8b5a(0x96) },
-            });
         function _0x1d0d3e(_0x4b5f7a) {
             const _0x275252 = _0x5a8b5a,
                 _0x172835 = _0x4b5f7a[_0x275252(0xaa)],
@@ -153,7 +137,7 @@ const _0x38179e = _0x521b;
                 _0x41278c = document["querySelector"](_0x2faf7f)[_0x4836d9(0x8f)];
             scroll({ top: _0x41278c, behavior: _0x4836d9(0xa9) });
         }
-        var _0x432478 = new Swiper(_0x5a8b5a(0xa2), { slidesPerView: _0x5a8b5a(0xcf), spaceBetween: 0x0, freeMode: !![] });
+        var _0x432478 = new Swiper(_0x5a8b5a(0xa2), { slidesPerView: _0x5a8b5a(0xcf), spaceBetween: 0x0, loop:true, freeMode: !![] });
     });
 function _0x3d1b() {
     const _0x3ab65d = [
