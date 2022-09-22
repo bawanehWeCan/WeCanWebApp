@@ -467,7 +467,7 @@
     <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/nouislider/wNumb.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/custom.js?v=2') }}"></script>
+    <script src="{{ asset('assets/js/custom.js?v=3') }}"></script>
     <!-- PWA APP SERVICE REGISTRATION AND WORKS JS -->
     <script src="{{ asset('assets/js/pwa-services.js') }}"></script>
 
