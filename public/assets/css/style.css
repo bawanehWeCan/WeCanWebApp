@@ -17843,8 +17843,8 @@ header.default.header-light .un-block-right .menu-sidebar .btn svg rect {
  margin-right:15px
 }
 .un-item-seller .media-profile .image-avatar img {
- width: 100px;
- height: 100px;
+ width: 75px;
+ height: 75px;
  border-radius:50%;
  object-fit:
  cover
@@ -17857,7 +17857,7 @@ header.default.header-light .un-block-right .menu-sidebar .btn svg rect {
  right:-4px
 }
 .un-item-seller .media-profile .text h3 {
- font-size: 19px;
+ font-size: 16px;
  font-weight: 900;
  color:
  var(--dark);
