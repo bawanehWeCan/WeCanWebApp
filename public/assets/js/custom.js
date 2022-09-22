@@ -75,6 +75,8 @@ const _0x38179e = _0x521b;
             _0x432478 = new Swiper(_0x5a8b5a(0xd2), {
                 slidesPerView: _0x5a8b5a(0xcf),
                 spaceBetween: 0x0,
+                autoPlay:true,
+                loop:true,
                 breakpoints: { 0x3e0: { slidesPerView: 0x2, spaceBetween: 0x14 }, 0x500: { slidesPerView: 0x3, spaceBetween: 0x14 }, 0x5a0: { slidesPerView: 0x4, spaceBetween: 0x14 } },
                 navigation: { nextEl: _0x5a8b5a(0xc6), prevEl: _0x5a8b5a(0x96) },
             });
