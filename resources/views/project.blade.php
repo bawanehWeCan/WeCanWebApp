@@ -130,26 +130,7 @@
                                 <span>38M</span>
                                 <span>16S</span>
                             </div>
-                            <div class="un-info-card">
-                                <div class="block-left">
-                                    <h4>Secret Door</h4>
-                                    <div class="user">
-                                        <picture>
-                                            <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
-                                        </picture>
-                                        <h5>Ausonio_Loi</span>
-                                    </div>
-                                </div>
-                                <div class="block-right">
-                                    <h6>Starting Bid</h6>
-                                    <p>
-                                        <span>($3,650)</span>
-                                        2.24 ETH
-                                    </p>
-                                </div>
 
-                            </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
@@ -164,26 +145,7 @@
                                 <span>38M</span>
                                 <span>16S</span>
                             </div>
-                            <div class="un-info-card">
-                                <div class="block-left">
-                                    <h4>Secret Door</h4>
-                                    <div class="user">
-                                        <picture>
-                                            <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
-                                        </picture>
-                                        <h5>Ausonio_Loi</span>
-                                    </div>
-                                </div>
-                                <div class="block-right">
-                                    <h6>Starting Bid</h6>
-                                    <p>
-                                        <span>($3,650)</span>
-                                        2.24 ETH
-                                    </p>
-                                </div>
 
-                            </div>
                         </a>
                     </div>
                 </div>
