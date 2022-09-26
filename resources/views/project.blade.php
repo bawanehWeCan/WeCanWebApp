@@ -25,8 +25,8 @@
                                     <h4>Dark Side of Me</h4>
                                     <div class="user">
                                         <picture>
-                                            <source srcset="images/avatar/19.jpg" type="image/webp">
-                                            <img class="img-avatar" src="images/avatar/19.jpg" alt="">
+                                            <source srcset="{{ asset( $project->image ) }}" type="image/webp">
+                                            <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
                                         </picture>
                                         <h5>Julian Co.</span>
                                     </div>
@@ -46,8 +46,8 @@
                         <!-- item-card-nft -->
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
-                                <source srcset="images/other/8.jpg" type="image/webp">
-                                <img class="big-image" src="images/other/8.jpg" alt="">
+                                <source srcset="{{ asset( $project->image ) }}" type="image/webp">
+                                    <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -59,8 +59,8 @@
                                     <h4>Ceres Searching</h4>
                                     <div class="user">
                                         <picture>
-                                            <source srcset="images/avatar/8.jpg" type="image/webp">
-                                            <img class="img-avatar" src="images/avatar/8.png" alt="">
+                                            <source srcset="{{ asset( $project->image ) }}" type="image/webp">
+                                                <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
                                         </picture>
                                         <h5>Settimio Loggia</span>
                                     </div>
@@ -80,8 +80,8 @@
                         <!-- item-card-nft -->
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
-                                <source srcset="images/other/9.jpg" type="image/webp">
-                                <img class="big-image" src="images/other/9.jpg" alt="">
+                                <source srcset="{{ asset( $project->image ) }}" type="image/webp">
+                                    <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -93,8 +93,8 @@
                                     <h4>Secret Door</h4>
                                     <div class="user">
                                         <picture>
-                                            <source srcset="images/avatar/7.jpg" type="image/webp">
-                                            <img class="img-avatar" src="images/avatar/7.jpg" alt="">
+                                            <source srcset="{{ asset( $project->image ) }}" type="image/webp">
+                                                <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
                                         </picture>
                                         <h5>Ausonio_Loi</span>
                                     </div>
@@ -114,8 +114,8 @@
                         <!-- item-card-nft -->
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
-                                <source srcset="images/other/35.jpg" type="image/webp">
-                                <img class="big-image" src="images/other/35.jpg" alt="">
+                                <source srcset="{{ asset( $project->image ) }}" type="image/webp">
+                                    <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -127,8 +127,8 @@
                                     <h4>Secret Door</h4>
                                     <div class="user">
                                         <picture>
-                                            <source srcset="images/avatar/10.jpg" type="image/webp">
-                                            <img class="img-avatar" src="images/avatar/10.jpg" alt="">
+                                            <source srcset="{{ asset( $project->image ) }}" type="image/webp">
+                                                <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
                                         </picture>
                                         <h5>Ausonio_Loi</span>
                                     </div>
