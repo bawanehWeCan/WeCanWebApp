@@ -102,7 +102,7 @@
                         قم بتعبئة النموذج التالي وسيقوم فريقنا بالإتصال بك في اقرب وقت ممكن
                     </p>
                 </div>
-                <form action="{{ route('send11') }}" action="post">
+                <form action="{{ route('send11') }}" method="post">
                     @csrf
                     <div class="padding-20 form-edit-profile bg-white">
                         <div class="form-group">
