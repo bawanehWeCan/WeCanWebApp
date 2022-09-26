@@ -22,7 +22,7 @@ START THE CONTENT
                             <!-- item-card-gradual -->
                             <div class="item-card-gradual">
                                 <!-- <div class="head-card"></div> -->
-                                <a href="#" class="body-card">
+                                <a href="{{ route('project',$project->id) }}" class="body-card">
                                     <div class="cover-nft">
                                         <picture>
                                             <source srcset="{{ asset( $project->image ) }}" type="image/webp">

@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    
+
 
     /**
      * Show the application dashboard.
@@ -23,13 +24,13 @@ class HomeController extends Controller
     public function service( $id )
     {
         $service = Service::find( $id );
-        
+
         // get previous user id
         $previous = Service::where('id', '<', $service->id)->max('id');
 
         // get next user id
         $next = Service::where('id', '>', $service->id)->min('id');
-        
+
 
         return view('service', compact('service','previous','next'));
     }
@@ -54,5 +55,13 @@ class HomeController extends Controller
     public function contact()
     {
         return view('contact');
+    }
+
+    public function project( $id ){
+
+        $project = Project::find( $id );
+
+        return view( 'project', compact('project') );
+
     }
 }
