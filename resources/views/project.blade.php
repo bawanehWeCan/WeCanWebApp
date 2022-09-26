@@ -60,9 +60,7 @@
             <div class="title-card-text d-flex align-items-center justify-content-between">
                 <div class="text">
                     <h1>{{ $project->name }}</h1>
-                    <p>Yes We Can Creat & Design Website </p>
                 </div>
-                <span class="btn-xs-size bg-pink text-white rounded-pill">الأكثر طلباً</span>
             </div>
 
 
@@ -73,16 +71,7 @@
         <div class="space-sticky-footer"></div>
         <div class="footer">
             <div class="content">
-                <div class="links-item-pages">
-                    <a href="@if (isset($previous)) {{ route('service', $previous) }} @endif"
-                        class="icon-box prev">
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-                    <a href="@if (isset($next)) {{ route('service', $next) }} @endif"
-                        class="icon-box next">
-                        <i class="ri-arrow-left-line"></i>
-                    </a>
-                </div>
+
                 <a href="{{ route('contact') }}" class="btn btn-bid-items">
                     <p>اطلب الآن</p>
                     <div class="ico">
