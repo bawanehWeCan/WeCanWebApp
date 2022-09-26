@@ -11,7 +11,7 @@
             <a href="javascript:history.back()" class="icon">
                 <i class="ri-arrow-drop-right-line"></i>
             </a>
-            <h1>{{ $service->name }}</h1>
+            <h1>{{ $project->name }}</h1>
         </div>
 
         <div class="un-block-right">
