@@ -12,8 +12,8 @@
                         <!-- item-card-nft -->
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
-                                <source srcset="images/other/11.jpg" type="image/webp">
-                                <img class="big-image" src="images/other/11.jpg" alt="">
+                                <source srcset="{{ asset( $project->image ) }}" type="image/webp">
+                                    <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
