@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\StorysController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -56,14 +57,18 @@ Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'
 
 
 
-Route::get('send-mail', function () {
+Route::post('send-mail', function ( Request $request ) {
 
     $details = [
-        'title' => 'Mail from wecan.jo',
-        'body' => 'This is for testing email using smtp'
+        'fullname' => $request->fullname,
+        'title' => $request->title,
+        'content' => $request->content,
+        'email' => $request->email,
+        'phone' => $request->phone,
+        'site' => $request->site,
     ];
 
     \Mail::to('info@wecan.jo')->send(new \App\Mail\MyTestMail($details));
 
-    dd("Email is Sent.");
-});
+    return redirect()->back();
+})->name('send11');
