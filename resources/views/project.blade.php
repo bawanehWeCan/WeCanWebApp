@@ -121,7 +121,7 @@
                 </div>
 
                 <div class="text">
-                    {!! $product->content !!}
+                    {!! $project->content !!}
                 </div>
 
             </div>

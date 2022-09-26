@@ -21,11 +21,11 @@
     <link rel="apple-touch-icon" href="{{ asset('images/favicon/icon-96x96.png') }}">
 
     <!-- CSS FILES -->
-    <link rel="stylesheet"  href="{{ asset('assets/css/style.css?v=28') }}">
-    <link rel="stylesheet"  href="{{ asset('assets/css/remixicon.min.css') }}">
-    <link rel="stylesheet"  href="{{ asset('assets/vendors/swiper/swiper-bundle.min.css?v=1') }}">
-    <link rel="stylesheet"  href="{{ asset('assets/vendors/zuck_stories/zuck.min.css?') }}">
-    <link rel="manifest"    href="{{ asset('_manifest.json') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css?v=28') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/remixicon.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/swiper/swiper-bundle.min.css?v=1') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/zuck_stories/zuck.min.css?') }}">
+    <link rel="manifest" href="{{ asset('_manifest.json') }}" />
 
 
 
@@ -102,53 +102,57 @@
                         قم بتعبئة النموذج التالي وسيقوم فريقنا بالإتصال بك في اقرب وقت ممكن
                     </p>
                 </div>
-                <form action="{{ route('send11') }}">
-                @csrf
-                <div class="padding-20 form-edit-profile bg-white">
-                    <div class="form-group">
-                        <label>الإسم الكامل</label>
-                        <input type="text" class="form-control" name="fullname" value="" placeholder="الإسم الكامل">
-                        <div class="size-11 color-text form-text">سنكون سعداء بالتعرف عليك</div>
-                    </div>
-                    <div class="form-group">
-                        <label>عنوان الرسالة</label>
-                        <input type="text" class="form-control" name="title" placeholder="عنوان رسالتك">
-                    </div>
-                    <div class="form-group">
-                        <label>محتوى الرسالة</label>
-                        <textarea class="form-control" rows="3" name="content" placeholder="اخبرنا بطلبك بشكل بسيط"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>بريدك الإلكتروني</label>
-                        <input type="email" class="form-control" name="email" value="" placeholder="ادخل بريدك الإلتكروني">
-                    </div>
+                <form action="{{ route('send11') }}" action="post">
+                    @csrf
+                    <div class="padding-20 form-edit-profile bg-white">
+                        <div class="form-group">
+                            <label>الإسم الكامل</label>
+                            <input type="text" class="form-control" name="fullname" value=""
+                                placeholder="الإسم الكامل">
+                            <div class="size-11 color-text form-text">سنكون سعداء بالتعرف عليك</div>
+                        </div>
+                        <div class="form-group">
+                            <label>عنوان الرسالة</label>
+                            <input type="text" class="form-control" name="title" placeholder="عنوان رسالتك">
+                        </div>
+                        <div class="form-group">
+                            <label>محتوى الرسالة</label>
+                            <textarea class="form-control" rows="3" name="content" placeholder="اخبرنا بطلبك بشكل بسيط"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>بريدك الإلكتروني</label>
+                            <input type="email" class="form-control" name="email" value=""
+                                placeholder="ادخل بريدك الإلتكروني">
+                        </div>
 
-                    <div class="bk-social-networks">
-                        <div class="form-group with_icon">
-                            <label>رقم الهاتف</label>
-                            <div class="input_group">
-                                <input type="text" name="phone" class="form-control" placeholder="رقم الهاتف مصحوب برمز الدولة">
-                                <div class="icon">
-                                    <i class="ri-phone-fill"></i>
+                        <div class="bk-social-networks">
+                            <div class="form-group with_icon">
+                                <label>رقم الهاتف</label>
+                                <div class="input_group">
+                                    <input type="text" name="phone" class="form-control"
+                                        placeholder="رقم الهاتف مصحوب برمز الدولة">
+                                    <div class="icon">
+                                        <i class="ri-phone-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group with_icon">
+                                <label>موقعك الإلكتروني</label>
+                                <div class="input_group">
+                                    <input type="text" name="site" class="form-control"
+                                        placeholder="موقعك الإلكتروني ان وجد">
+                                    <div class="icon">
+                                        <i class="ri-global-fill"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group with_icon">
-                            <label>موقعك الإلكتروني</label>
-                            <div class="input_group">
-                                <input type="text" name="site" class="form-control" placeholder="موقعك الإلكتروني ان وجد">
-                                <div class="icon">
-                                    <i class="ri-global-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button"
-                        class="btn effect-click w-100 btn-md-size border border-solid border-snow color-text rounded-pill">
-                        ارسال
-                    </button>
+                        <button type="submit"
+                            class="btn effect-click w-100 btn-md-size border border-solid border-snow color-text rounded-pill">
+                            ارسال
+                        </button>
 
-                </div>
+                    </div>
                 </form>
 
             </section>
