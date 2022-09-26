@@ -55,7 +55,7 @@
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
                                 <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                    <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
+                                    <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -68,7 +68,7 @@
                                     <div class="user">
                                         <picture>
                                             <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                            <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
+                                            <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Julian Co.</span>
                                     </div>
@@ -89,7 +89,7 @@
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
                                 <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                    <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
+                                    <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -102,7 +102,7 @@
                                     <div class="user">
                                         <picture>
                                             <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
+                                                <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Settimio Loggia</span>
                                     </div>
@@ -123,7 +123,7 @@
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
                                 <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                    <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
+                                    <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -136,7 +136,7 @@
                                     <div class="user">
                                         <picture>
                                             <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
+                                                <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Ausonio_Loi</span>
                                     </div>
@@ -157,7 +157,7 @@
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
                                 <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                    <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
+                                    <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -170,7 +170,7 @@
                                     <div class="user">
                                         <picture>
                                             <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
+                                                <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Ausonio_Loi</span>
                                     </div>
