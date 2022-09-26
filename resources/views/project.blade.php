@@ -57,21 +57,10 @@
                                 <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
                                     <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
-                            <div class="counterdown">
-                                <span>08H</span>
-                                <span>38M</span>
-                                <span>16S</span>
-                            </div>
+
                             <div class="un-info-card">
                                 <div class="block-left">
-                                    <h4>Dark Side of Me</h4>
-                                    <div class="user">
-                                        <picture>
-                                            <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                            <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
-                                        </picture>
-                                        <h5>Julian Co.</span>
-                                    </div>
+
                                 </div>
                                 <div class="block-right">
                                     <h6>Starting Bid</h6>
@@ -91,11 +80,7 @@
                                 <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
                                     <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
-                            <div class="counterdown">
-                                <span>08H</span>
-                                <span>38M</span>
-                                <span>16S</span>
-                            </div>
+
 
                         </a>
                     </div>
@@ -106,11 +91,7 @@
                                 <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
                                     <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
-                            <div class="counterdown">
-                                <span>08H</span>
-                                <span>38M</span>
-                                <span>16S</span>
-                            </div>
+
 
                         </a>
                     </div>
@@ -121,11 +102,7 @@
                                 <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
                                     <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
-                            <div class="counterdown">
-                                <span>08H</span>
-                                <span>38M</span>
-                                <span>16S</span>
-                            </div>
+
 
                         </a>
                     </div>
