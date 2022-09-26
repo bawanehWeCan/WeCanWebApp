@@ -96,26 +96,7 @@
                                 <span>38M</span>
                                 <span>16S</span>
                             </div>
-                            <div class="un-info-card">
-                                <div class="block-left">
-                                    <h4>Ceres Searching</h4>
-                                    <div class="user">
-                                        <picture>
-                                            <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
-                                        </picture>
-                                        <h5>Settimio Loggia</span>
-                                    </div>
-                                </div>
-                                <div class="block-right">
-                                    <h6>Starting Bid</h6>
-                                    <p>
-                                        <span>($3,650)</span>
-                                        1.50 ETH
-                                    </p>
-                                </div>
 
-                            </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
