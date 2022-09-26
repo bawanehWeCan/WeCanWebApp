@@ -54,8 +54,8 @@
                         <!-- item-card-nft -->
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
-                                <source srcset="{{ asset( $project->image ) }}" type="image/webp">
-                                    <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
+                                <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
+                                    <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -67,8 +67,8 @@
                                     <h4>Dark Side of Me</h4>
                                     <div class="user">
                                         <picture>
-                                            <source srcset="{{ asset( $project->image ) }}" type="image/webp">
-                                            <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
+                                            <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
+                                            <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Julian Co.</span>
                                     </div>
@@ -88,8 +88,8 @@
                         <!-- item-card-nft -->
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
-                                <source srcset="{{ asset( $project->image ) }}" type="image/webp">
-                                    <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
+                                <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
+                                    <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -101,8 +101,8 @@
                                     <h4>Ceres Searching</h4>
                                     <div class="user">
                                         <picture>
-                                            <source srcset="{{ asset( $project->image ) }}" type="image/webp">
-                                                <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
+                                            <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
+                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Settimio Loggia</span>
                                     </div>
@@ -122,8 +122,8 @@
                         <!-- item-card-nft -->
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
-                                <source srcset="{{ asset( $project->image ) }}" type="image/webp">
-                                    <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
+                                <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
+                                    <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -135,8 +135,8 @@
                                     <h4>Secret Door</h4>
                                     <div class="user">
                                         <picture>
-                                            <source srcset="{{ asset( $project->image ) }}" type="image/webp">
-                                                <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
+                                            <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
+                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Ausonio_Loi</span>
                                     </div>
@@ -156,8 +156,8 @@
                         <!-- item-card-nft -->
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
-                                <source srcset="{{ asset( $project->image ) }}" type="image/webp">
-                                    <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
+                                <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
+                                    <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
                             <div class="counterdown">
                                 <span>08H</span>
@@ -169,8 +169,8 @@
                                     <h4>Secret Door</h4>
                                     <div class="user">
                                         <picture>
-                                            <source srcset="{{ asset( $project->image ) }}" type="image/webp">
-                                                <img class="img-avatar" src="{{ asset( $project->image ) }}" alt="">
+                                            <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
+                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Ausonio_Loi</span>
                                     </div>
