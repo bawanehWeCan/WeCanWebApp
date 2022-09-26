@@ -58,19 +58,7 @@
                                     <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
                             </picture>
 
-                            <div class="un-info-card">
-                                <div class="block-left">
 
-                                </div>
-                                <div class="block-right">
-                                    <h6>Starting Bid</h6>
-                                    <p>
-                                        <span>($3,650)</span>
-                                        1.50 ETH
-                                    </p>
-                                </div>
-
-                            </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
@@ -119,7 +107,6 @@
 
 
 
-    <div class="space-sticky"></div>
     <!-- ===================================
             START THE ACTIIVITY PAGE
             ==================================== -->
@@ -132,6 +119,11 @@
                 <div class="text">
                     <h1>{{ $project->name }}</h1>
                 </div>
+
+                <div class="text">
+                    {!! $product->content !!}
+                </div>
+
             </div>
 
 
