@@ -68,7 +68,7 @@
                                     <div class="user">
                                         <picture>
                                             <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                            <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
+                                            <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Julian Co.</span>
                                     </div>
@@ -102,7 +102,7 @@
                                     <div class="user">
                                         <picture>
                                             <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                                <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
+                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Settimio Loggia</span>
                                     </div>
@@ -136,7 +136,7 @@
                                     <div class="user">
                                         <picture>
                                             <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                                <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
+                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Ausonio_Loi</span>
                                     </div>
@@ -170,7 +170,7 @@
                                     <div class="user">
                                         <picture>
                                             <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                                <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
+                                                <img class="img-avatar" src="{{ asset( '11.webp' ) }}" alt="">
                                         </picture>
                                         <h5>Ausonio_Loi</span>
                                     </div>
