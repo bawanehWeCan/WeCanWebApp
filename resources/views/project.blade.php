@@ -50,50 +50,22 @@
             <!-- Swiper -->
             <div class="swiper nftSwiper">
                 <div class="swiper-wrapper">
+
+                    @foreach ($project->images as $i )
                     <div class="swiper-slide">
                         <!-- item-card-nft -->
                         <a href="page-collectibles-details.html" class="item-card-nft --swiper">
                             <picture>
-                                <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                    <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
+                                <source srcset="{{ asset( $i->image ) }}" type="image/webp">
+                                    <img class="big-image" src="{{ asset( $i->image  ) }}" alt="">
                             </picture>
 
 
                         </a>
                     </div>
-                    <div class="swiper-slide">
-                        <!-- item-card-nft -->
-                        <a href="page-collectibles-details.html" class="item-card-nft --swiper">
-                            <picture>
-                                <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                    <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
-                            </picture>
+                    @endforeach
 
 
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- item-card-nft -->
-                        <a href="page-collectibles-details.html" class="item-card-nft --swiper">
-                            <picture>
-                                <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                    <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
-                            </picture>
-
-
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- item-card-nft -->
-                        <a href="page-collectibles-details.html" class="item-card-nft --swiper">
-                            <picture>
-                                <source srcset="{{ asset( '11.webp' ) }}" type="image/webp">
-                                    <img class="big-image" src="{{ asset( '11.webp' ) }}" alt="">
-                            </picture>
-
-
-                        </a>
-                    </div>
                 </div>
             </div>
 
