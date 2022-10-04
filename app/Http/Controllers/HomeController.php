@@ -23,7 +23,7 @@ class HomeController extends Controller
 
     public function service( $id )
     {
-        $service = Service::find( $id );
+        $service = Service::where('slug', $id )->first();
 
         // get previous user id
         $previous = Service::where('id', '<', $service->id)->max('id');

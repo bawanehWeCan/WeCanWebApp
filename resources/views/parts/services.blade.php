@@ -37,7 +37,7 @@
                         <div class="counterdown">
                             <span>الأكثر طلباً</span>
                         </div>
-                        <a href="{{ route('service', $service->id) }}" class="un-info-card">
+                        <a href="{{ route('service', $service->slug) }}" class="un-info-card">
                             <div class="block-left">
                                 <h4>{{ $service->name }}</h4>
                             </div>
@@ -55,7 +55,7 @@
                     @endphp
                 @else
                     <!-- item-sm-card-NFTs -->
-                    <a href="{{ route('service', $service->id) }}" class="item-sm-card-NFTs">
+                    <a href="{{ route('service', $service->slug) }}" class="item-sm-card-NFTs">
                         <div class="cover-image">
                             <picture>
                                 <source srcset="{{ asset($service->image) }}" type="image/webp">
