@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Brand;
+use App\Models\Image;
 use App\Models\Price;
 use App\Models\Story;
 use App\Models\Project;
@@ -96,6 +97,20 @@ Route::post( 'add-brand', function( Request $request ){
     $project->name          = $request->name;
     $project->image         = $request->image;
     $project->link          = $request->link;
+    $project->save();
+
+    echo 'Done';
+
+} );
+
+
+
+Route::post( 'add-image', function( Request $request ){
+
+    $project                = new Image();
+    $project->project_id          = $request->project_id;
+    $project->image         = $request->image;
+
     $project->save();
 
     echo 'Done';
