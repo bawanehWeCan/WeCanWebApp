@@ -22,4 +22,8 @@ class Project extends Model
     public function service(){
         return $this->belongsTo( Service::class , 'service_id' );
     }
+
+    public function images(){
+        return $this->hasMany( Project::class  );
+    }
 }
