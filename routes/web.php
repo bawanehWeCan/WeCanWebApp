@@ -30,7 +30,7 @@ Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->
 
 Route::get('/{id}', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 
-Route::get('/project/{id}', [App\Http\Controllers\HomeController::class, 'project'])->name('project');
+Route::get('/portfolio/{id}', [App\Http\Controllers\HomeController::class, 'project'])->name('project');
 
 Route::get('/help', [App\Http\Controllers\HomeController::class, 'help'])->name('help');
 

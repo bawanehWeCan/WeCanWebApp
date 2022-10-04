@@ -59,7 +59,7 @@ class HomeController extends Controller
 
     public function project( $id ){
 
-        $project = Project::find( $id );
+        $project = Project::where('slug', $id )->first();
 
         return view( 'project', compact('project') );
 
