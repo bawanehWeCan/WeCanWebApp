@@ -28,7 +28,7 @@ Route::get('/services', [App\Http\Controllers\HomeController::class, 'services']
 
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
-Route::get('/service/{id}', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
+Route::get('/{id}', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 
 Route::get('/project/{id}', [App\Http\Controllers\HomeController::class, 'project'])->name('project');
 
