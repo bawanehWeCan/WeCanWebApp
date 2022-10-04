@@ -109,7 +109,12 @@ Route::post( 'add-image', function( Request $request ){
 
     $project                = new Image();
     $project->project_id          = $request->project_id;
-    $project->image         = $request->image;
+
+    $file =$request->image;
+            $extension = $file->getClientOriginalExtension(); // getting image extension
+            $filename =time().mt_rand(1000,9999).'.'.$extension;
+            $file->move(public_path('img/'), $filename);
+            $project->image   =  'img/'.$filename;
 
     $project->save();
 
