@@ -16,7 +16,11 @@ class Brand extends Model
             $filename =time().mt_rand(1000,9999).'.'.$extension;
             $file->move(public_path('img/'), $filename);
             $this->attributes['image'] =  'img/'.$filename;
+
+
+
+
         }
     }
-    
+
 }
