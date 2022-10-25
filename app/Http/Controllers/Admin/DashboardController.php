@@ -40,8 +40,16 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
-            'email' => 'required|email|unique:users,email',
+            'email' => 'required|email|unique:users',
             'password' => 'required',
+
+        ],[
+
+            'name.required' =>'يرجي ادخال اسم المستخدم',
+            'email.unique' =>'البريد الإلكتروني مسجل مسبقا',
+            'email.required' =>'يرجي ادخال البريد الإلكتروني',
+            'email.email'=>'يرجى إدخال البريد الإلكتروني بشكل صحيح',
+            'password.required'=>'يرجى إدخال كلمة السر'
 
         ]);
 

@@ -1,7 +1,11 @@
 @extends('dashboard.layouts.layout')
 
 @section('body')
-
+@if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
 <div class="container-fluid">
     <div class="animated fadeIn">
         <div class="row">
@@ -33,8 +37,9 @@
                                         $i=0;
                                     @endphp
                                     @foreach ($data as $user)
+                                    <?php $i++; ?>
                                     <tr>
-                                        <td>{{$i++}}</td>
+                                        <td>{{$i}}</td>
                                         <td>{{ $user->name }}</td>
                                         <td>{{ $user->email }}</td>
                                         <td>

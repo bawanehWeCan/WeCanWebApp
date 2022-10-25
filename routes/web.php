@@ -24,7 +24,7 @@ Route::get('/', function () {
 })->name('home');
 
 #dashboard
-Route::resource('dashboard', DashboardController::class)->middleware('check_admin');
+Route::resource('dashboard', DashboardController::class);
 
 Auth::routes();
 
