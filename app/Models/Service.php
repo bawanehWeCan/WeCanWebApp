@@ -8,6 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Service extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'image',
+        'price',
+        'heading1',
+        'heading2',
+        'content1',
+        'content2',
+        'features'
+    ];
+
+
+
 
     public function setImageAttribute($value){
         if ($value){

@@ -18,7 +18,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('image');
             $table->string('content');
-            $table->string('service_id');
+            // $table->string('service_id');
+            $table->unsignedBigInteger('service_id');
+            $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
             $table->timestamps();
         });
     }

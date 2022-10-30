@@ -8,7 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'image',
+        'service_id',
+        'content'
 
+    ];
     public function setImageAttribute($value){
         if ($value){
             $file = $value;
