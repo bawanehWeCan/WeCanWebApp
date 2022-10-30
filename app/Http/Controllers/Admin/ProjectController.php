@@ -13,13 +13,13 @@ class ProjectController extends Controller
     public function index()
     {
         $data = Project::paginate(5);
-        return view('dashboard.projects.index',compact('data'));
+        return view('dashboard.projects.index', compact('data'));
     }
 
     public function create()
     {
         $data = Service::paginate(5);
-        return view('dashboard.projects.add_project',compact('data'));
+        return view('dashboard.projects.add_project', compact('data'));
     }
 
     public function store(ProjectRequest $request)
@@ -48,21 +48,22 @@ class ProjectController extends Controller
         // }
 
         $project = new Project();
-        $project->image=$project->setImageAttribute($request->file('pic'));
+        // $project->image=$project->setImageAttribute($request->file('pic'));
         $project->name = $request->name;
+        $project->image = $request->pic;
         $project->service_id = $request->select_ser;
         $project->content = $request->content;
 
 
-            $project->save();
+        $project->save();
 
         return redirect()->route('admin.projects')
-                        ->with('success','تم إضافة المشروع بنجاح');
+            ->with('success', 'تم إضافة المشروع بنجاح');
     }
 
     public function destroy(Request $request)
     {
         Project::find($request->id)->delete();
-        return redirect()->route('admin.projects')->with('success','تم حذف المشروع بنجاح');
+        return redirect()->route('admin.projects')->with('success', 'تم حذف المشروع بنجاح');
     }
 }

@@ -51,9 +51,10 @@ class ServiceController extends Controller
         //}
 
         $service=new Service();
-        $service->image=$service->setImageAttribute($request->file('pic'));
+        // $service->image=$service->setImageAttribute($request->file('pic'));
 
              $service->name = $request->name;
+             $service->image = $request->pic;
 
             $service->price = $request->price;
 
