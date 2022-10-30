@@ -17,6 +17,7 @@
      <link href="{{asset('adminassets/css/simple-line-icons.css')}}" rel="stylesheet">
      <!-- Main styles for this application -->
      <link href="{{asset('adminassets/dest/style.css?v1=1')}}" rel="stylesheet">
+
  </head>
  <!-- BODY options, add following classes to body to change options
          1. 'compact-nav'     	  - Switch sidebar to minified version (width 50px)
