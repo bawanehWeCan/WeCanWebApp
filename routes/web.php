@@ -23,8 +23,34 @@ Route::get('/', function () {
 
 })->name('home');
 
+
+
+
 #dashboard
-Route::resource('dashboard', DashboardController::class);
+Route::prefix('admin')->group(function () {
+    #users
+    Route::get('/users', [App\Http\Controllers\Admin\UserController::class, 'index'])->name('admin.users');
+    Route::get('/users/create', [App\Http\Controllers\Admin\UserController::class, 'create']);
+    Route::post('/users/store', [App\Http\Controllers\Admin\UserController::class, 'store']);
+    Route::delete('/user/{id}', [App\Http\Controllers\Admin\UserController::class, 'destroy'])->name('admin.user.destroy');
+
+    #services
+    Route::get('/services', [App\Http\Controllers\Admin\ServiceController::class, 'index'])->name('admin.services');
+    Route::get('/services/create', [App\Http\Controllers\Admin\ServiceController::class, 'create']);
+    Route::post('/services/store', [App\Http\Controllers\Admin\ServiceController::class, 'store']);
+    Route::delete('/service/{id}', [App\Http\Controllers\Admin\ServiceController::class, 'destroy']);
+
+   #projects
+   Route::get('/projects', [App\Http\Controllers\Admin\ProjectController::class, 'index'])->name('admin.projects');
+   Route::get('/projects/create', [App\Http\Controllers\Admin\ProjectController::class, 'create']);
+   Route::post('/projects/store', [App\Http\Controllers\Admin\ProjectController::class, 'store']);
+   Route::delete('/project/{id}', [App\Http\Controllers\Admin\ProjectController::class, 'destroy'])->name('admin.project.destroy');
+
+
+});
+
+
+
 
 Auth::routes();
 

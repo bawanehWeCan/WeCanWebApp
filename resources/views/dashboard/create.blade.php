@@ -23,7 +23,7 @@
                 إضافة مستخدم :
             </div>
             <div class="card-block">
-                <form   action="{{route('dashboard.store','test')}}" method="post">
+                <form   action="{{url('admin/users/store')}}" method="post">
                     @csrf
                     <div class="form-group">
                         <div class="input-group">

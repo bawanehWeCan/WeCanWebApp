@@ -1,12 +1,7 @@
-<!--
- * CoreUI - Open Source Bootstrap Admin Template
- * @version v1.0.0-alpha.2
- * @link http://coreui.io
- * Copyright (c) 2016 creativeLabs Łukasz Holeczek
- * @license MIT
- -->
+
  <!DOCTYPE html>
- <html lang="IR-fa" dir="rtl">
+ <html lang="en" dir="rtl">
+
 
  <head>
      <meta charset="utf-8">
@@ -36,12 +31,17 @@
  <body class="navbar-fixed sidebar-nav fixed-nav">
      <header class="navbar">
          <div class="container-fluid">
-             <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">&#9776;</button>
-             <a class="navbar-brand" href="#"></a>
+             {{-- <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">&#9776;</button>
+             <a class="navbar-brand" href="#"></a> --}}
+
+
+
              <ul class="nav navbar-nav hidden-md-down">
                  <li class="nav-item">
                      <a class="nav-link navbar-toggler layout-toggler" href="#">&#9776;</a>
                  </li>
+                 {{-- logo --}}
+                 <a href=""><img src="http://127.0.0.1:8000/images/logo_b.svg" width="80px" height="80px" style="margin-top: -12px"></a>
 
                  <!--<li class="nav-item p-x-1">
                      <a class="nav-link" href="#">داشبورد</a>
