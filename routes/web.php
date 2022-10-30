@@ -60,7 +60,7 @@ Route::get('/services', [App\Http\Controllers\HomeController::class, 'services']
 
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
-//Route::get('/{id}', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
+Route::get('/s/{id}', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 
 Route::get('/portfolio/{id}', [App\Http\Controllers\HomeController::class, 'project'])->name('project');
 
