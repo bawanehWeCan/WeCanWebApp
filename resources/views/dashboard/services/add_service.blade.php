@@ -37,7 +37,7 @@
                         <div class="input-group">
 
                             <span class="input-group-addon"> الصورة:</span>
-                            <input type="file" name="pic" class="form-control" accept=".jpg, .png, image/jpeg, image/png"
+                            <input type="file" required="" name="pic" class="form-control" accept=".jpg, .png, image/jpeg, image/png"
                             data-height="70" />
 
                             </span>
