@@ -6,7 +6,7 @@
             </li>
 
             <li class="nav-title">
-               إدارة المستخدمين
+                الإدارة:
             </li>
              <li class="nav-item">
                 <a class="nav-link" href="{{url('admin/users')}}"><i class="icon-user-follow"></i> المستخدمين</a>
@@ -14,9 +14,9 @@
             </li>
 
 
-            <li class="nav-title">
+            {{-- <li class="nav-title">
                 إدارة الخدمات
-             </li>
+             </li> --}}
               <li class="nav-item">
                  <a class="nav-link" href="{{url('admin/services')}}"><i class="icon-social-dropbox"></i> الخدمات</a>
 
@@ -24,11 +24,38 @@
 
 
 
-            <li class="nav-title">
+            {{-- <li class="nav-title">
                 إدارة المشاريع
-             </li>
+             </li> --}}
               <li class="nav-item">
                  <a class="nav-link" href="{{url('admin/projects')}}"><i class="fa fa-product-hunt"></i> المشاريع</a>
+
+             </li>
+
+
+             {{-- <li class="nav-title">
+                إدارة الأسعار
+             </li> --}}
+              <li class="nav-item">
+                 <a class="nav-link" href="{{url('admin/prices')}}"><i class="icon-paypal icons"></i> الأسعار</a>
+
+             </li>
+
+
+             {{-- <li class="nav-title">
+                إدارة البراندات
+             </li> --}}
+              <li class="nav-item">
+                 <a class="nav-link" href="{{url('admin/brands')}}"><i class="icon-map icons"></i> البراندات</a>
+
+             </li>
+
+
+             {{-- <li class="nav-title">
+                إدارة القصص
+             </li> --}}
+              <li class="nav-item">
+                 <a class="nav-link" href="{{url('admin/stories')}}"><i class="icon-picture icons"></i> القصص</a>
 
              </li>
 

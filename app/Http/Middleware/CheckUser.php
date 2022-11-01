@@ -17,28 +17,39 @@ class CheckUser
      */
     public function handle(Request $request, Closure $next)
     {
-        if(Auth::user())
-        {
-           if(Auth::user()->user_type==1) {
-            return $next($request);
-
-           }
-           else{
-          return redirect('/home');
-           }
-        }
-
-        else{
-            return redirect('login');
-        }
-
-
-
-        // if(Auth::user() && Auth::user()->user_type==1)
+        // if(Auth::user())
         // {
+        //    if(Auth::user()->user_type==1) {
         //     return $next($request);
+
+        //    }
+        //    else{
+        //   return redirect('/home');
+        //    }
         // }
-        // abort('403');
+
+        // else{
+        //     return redirect('login');
+        // }
+
+        if(Auth::check())
+        {
+            if(Auth::user()->user_type == '1')
+            {
+                return $next($request);
+            }
+            else
+            {
+                return redirect('/home')->with('status','Access Denied! as you are not as admin');
+            }
+        }
+        else
+        {
+            return redirect('/home')->with('status','Please Login First');
+        }
+    }
+
+
 
     }
-}
+
