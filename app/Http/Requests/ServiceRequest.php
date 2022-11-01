@@ -25,6 +25,7 @@ class ServiceRequest extends FormRequest
     {
         return [
             'name' => 'required',
+            'image'=> 'required'|'image',
             'price' => 'required|integer',
             'heading1' => 'required',
             'content1'=> 'required',
@@ -39,6 +40,7 @@ class ServiceRequest extends FormRequest
     {
         return [
             'name.required' => 'يرجى ادخال اسم الخدمة',
+            'image.required' => 'يرجى اختيار صورة  ',
             'price.required' => 'يرجى ادخال السعر',
             'heading1.required' => 'يرجى ادخال العنوان الأول',
             'content1.required'=> 'يرجى ادخال المحتوى الأول',

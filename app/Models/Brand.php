@@ -8,6 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Brand extends Model
 {
     use HasFactory;
+    protected $fillable = [
+
+        'image',
+        'name',
+        'link',
+
+    ];
+
 
     public function setImageAttribute($value){
         if ($value){
@@ -18,5 +26,5 @@ class Brand extends Model
             $this->attributes['image'] =  'img/'.$filename;
         }
     }
-    
+
 }

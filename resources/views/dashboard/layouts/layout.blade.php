@@ -42,9 +42,11 @@
                      <a class="nav-link navbar-toggler layout-toggler" href="#">&#9776;</a>
                  </li>
                  {{-- logo --}}
-                 <a href=""><img src="http://127.0.0.1:8000/images/logo_b.svg" width="80px" height="80px" style="margin-top: -12px"></a>
 
-                 <!--<li class="nav-item p-x-1">
+
+                 <a href=""><img src="http://127.0.0.1:8000/images/logo_b.svg" width="80px" height="80px" style="margin-top: -12px"></a>
+             </ul>
+             <!--<li class="nav-item p-x-1">
                      <a class="nav-link" href="#">داشبورد</a>
                  </li>
                  <li class="nav-item p-x-1">
@@ -53,7 +55,24 @@
                  <li class="nav-item p-x-1">
                      <a class="nav-link" href="#">Settings</a>
                  </li>-->
-             </ul>
+                 <ul class="nav navbar-nav pull-left hidden-md-down" style="margin-block: -75px;padding-left:22px">
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="hidden-md-down">{{ Auth::user()->name }}</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+
+                        <div class="divider"></div>
+                        {{-- <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> خروج</a> --}}
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i
+                            class="fa fa-lock"></i>تسجيل خروج</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                    </div>
+                </li>
+                 </ul>
 
          </div>
      </header>
@@ -337,10 +356,10 @@
 
      <footer class="footer">
          <span class="text-left">
-             <a href="http://coreui.io">WeCan</a> &copy; 2022
+             <a href="">WeCan</a> &copy; 2022
          </span>
          <span class="pull-right">
-             Created by <a href="http://coreui.io">WeCan</a>
+             Created by <a href="">WeCan</a>
          </span>
      </footer>
      <!-- Bootstrap and necessary plugins -->

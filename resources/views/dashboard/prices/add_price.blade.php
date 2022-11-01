@@ -20,69 +20,54 @@
             </ul>
         </div>
         @endif
-                إضافة خدمة :
+                إضافة السعر :
             </div>
             <div class="card-block">
-                <form   action="{{url('admin/services/store')}}" method="post" enctype="multipart/form-data">
+                <form   action="{{url('admin/prices/store')}}" method="post" enctype="multipart/form-data">
                     @csrf
+
                     <div class="form-group">
                         <div class="input-group">
-                            <span class="input-group-addon">اسم الخدمة:</span>
+                            <span class="input-group-addon">الاسم:</span>
                             <input type="text"  name="name" required="" class="form-control">
 
                             </span>
                         </div>
                     </div>
+
+
                     <div class="form-group">
                         <div class="input-group">
 
                             <span class="input-group-addon"> الصورة:</span>
-                            <input type="file" required="" name="pic" class="form-control" accept=".jpg, .png, image/jpeg, image/png"
+
+                            <input type="file" required="" name="pic" class="form-control"  accept=".jpg, .png, image/jpeg, image/png"
                             data-height="70" />
 
-                            </span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon">السعر:</span>
-                            <input type="number" id="username3" name="price" required="" class="form-control">
 
                             </span>
                         </div>
                     </div>
+
+
                     <div class="form-group">
                         <div class="input-group">
-                            <span class="input-group-addon"> العنوان الأول:</span>
-                            <input type="text" id="username3" name="heading1" required="" class="form-control">
+                            <span class="input-group-addon"> السعر:</span>
+                            <input type="text" id="username3" name="price" required="" class="form-control">
 
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
-                            <span class="input-group-addon"> المحتوى الأول:</span>
-                            <input type="text" id="username3" name="content1" required="" class="form-control">
+                            <span class="input-group-addon"> الميزة الأولى:</span>
+                            <input type="text" id="username3" name="feature1" required="" class="form-control">
 
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
-                            <span class="input-group-addon"> العنوان الثاني:</span>
-                            <input type="text" id="username3" name="heading2" required="" class="form-control">
-
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"> المحتوى الثاني:</span>
-                            <input type="text" id="username3" name="content2" required="" class="form-control">
-
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"> الميزات:</span>
-                            <input type="text" id="username3" name="features" required="" class="form-control">
+                            <span class="input-group-addon"> الميزة الثانية:</span>
+                            <input type="text" id="username3" name="feature2" required="" class="form-control">
 
                         </div>
                     </div>

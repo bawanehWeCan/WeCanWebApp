@@ -13,12 +13,12 @@ class UserController extends Controller
     public function index()
     {
         $data = User::paginate(5);
-        return view('dashboard.index',compact('data'));
+        return view('dashboard.users.index',compact('data'));
     }
 
     public function create()
     {
-        return view('dashboard.create');
+        return view('dashboard.users.add_user');
     }
 
     public function store(UserRequest $request)

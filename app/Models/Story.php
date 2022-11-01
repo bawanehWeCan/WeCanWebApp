@@ -9,6 +9,16 @@ class Story extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+
+        'image',
+        'avater',
+        'name',
+        'content',
+
+
+    ];
+
     public function setImageAttribute($value){
         if ($value){
             $file = $value;
