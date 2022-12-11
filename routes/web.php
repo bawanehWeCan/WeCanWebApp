@@ -46,6 +46,12 @@ Route::prefix('admin')->group(function () {
    Route::post('/projects/store', [App\Http\Controllers\Admin\ProjectController::class, 'store']);
    Route::delete('/project/{id}', [App\Http\Controllers\Admin\ProjectController::class, 'destroy'])->name('admin.project.destroy');
 
+   #faqs
+   Route::get('/faqs', [App\Http\Controllers\Admin\FaqController::class, 'index'])->name('admin.faqs');
+   Route::get('/faqs/create', [App\Http\Controllers\Admin\FaqController::class, 'create']);
+   Route::post('/faqs/store', [App\Http\Controllers\Admin\FaqController::class, 'store']);
+   Route::delete('/faq/{id}', [App\Http\Controllers\Admin\FaqController::class, 'destroy'])->name('admin.faq.destroy');
+
 
 });
 

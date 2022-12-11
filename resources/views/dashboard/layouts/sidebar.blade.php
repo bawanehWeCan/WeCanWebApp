@@ -32,6 +32,14 @@
 
              </li>
 
+             <li class="nav-title">
+                إدارة مركز المساعدة
+             </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="{{url('admin/faqs')}}"><i class="icon-social-dropbox"></i> مركز المساعدة</a>
+
+             </li>
+
             <!--<li class="nav-item nav-dropdown">
                 <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> ثبت کاربر جدید</a>
                 <ul class="nav-dropdown-items">

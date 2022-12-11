@@ -11,8 +11,8 @@ use Yajra\Datatables\Datatables;
 
 class StorysController extends Controller
 {
-	
-	
+
+
     /**
      * Display a listing of the resource. (uses ajax table)
      *
@@ -32,8 +32,8 @@ class StorysController extends Controller
     public function create()
     {
 		//$this->authorize('create', Story::class);
-		
-		
+
+
         return view('admin.owner.create');
     }
 
@@ -47,8 +47,8 @@ class StorysController extends Controller
     public function store(Request $request)
     {
 		$this->authorize('create', Story::class);
-        
-        
+
+
         $story = new  Story;
 		$story->title = $request->title;
 		$story->content = $request->content;
@@ -66,7 +66,7 @@ class StorysController extends Controller
      */
     public function show(Story $story)
     {
-		
+
        // $story = Story::findOrFail($id);
         return view('Admin/Storys.show', compact('story'));
     }
@@ -83,8 +83,8 @@ class StorysController extends Controller
 		$this->authorize('update', $story);
         //$story = Story::findOrFail($id);
 		//add the jsvalidator
-		
-		
+
+
         return view('Admin/Storys.edit', compact('story', '', 'jsvalidator'));
     }
 
@@ -99,15 +99,15 @@ class StorysController extends Controller
     public function update(Request $request, Story $story)
     {
 		$this->authorize('update', $story);
-        
+
         $requestData = $request->all();
-        
+
         //$story->update($requestData);
 		$story->title = $request->title;
 		$story->content = $request->content;
 		$story->save();
 		return response()->json(['status' => 'SUCCESS','message' => __('Story Updated Successfully' )]);
-     
+
     }
 
     /**
@@ -124,7 +124,7 @@ class StorysController extends Controller
 		return response()->json(['status' => 'SUCCESS','message' => __('Story Deleted Successfully')]);
 
     }
-	
+
 	  /**toggle Item status.
      *
      * @param  int  $id
@@ -137,11 +137,11 @@ class StorysController extends Controller
 		$story->active = $story->active? false:true;
 		$story->save();
 		$action= $story->active ?  __('Activated'): __('Deactivated');
-		
+
 		return response()->json(['status' => 'SUCCESS','message' => __('Story '.$action.' Successfuly')]);
-       
+
     }
-	
+
 	/**
      * Remove the specified resources from storage.
      *
@@ -151,7 +151,7 @@ class StorysController extends Controller
      */
     public function delete(Request $request)
     {
-		
+
 		if(!count($request->ids))
 		return response()->json(['status' => 'SUCCESS','message' => __('Nothing Selected')]);
 		$storys = Story::findMany($request->ids);
@@ -161,7 +161,7 @@ class StorysController extends Controller
         Story::destroy($request->ids);
 		return response()->json(['status' => 'SUCCESS','message' => __('All Selected Items Have Been Deleted')]);
     }
-	
+
 	  /**toggle Item status.
      *
      * @param  int  $id
@@ -180,11 +180,11 @@ class StorysController extends Controller
 		$action= $request->status == 1 ?  __('Activated'): __('Deactivated');
 		return response()->json(['status' => 'SUCCESS','message' => __('Story '.$action.' Successfully')]);
     }
-	
+
 	/**
      * Get the Table.
      *
-     * 
+     *
      *
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
@@ -206,13 +206,13 @@ class StorysController extends Controller
 					$label = 'success';
 				}
 				return '<a data-table="Story" class="ajax_link refresh btn btn-sm btn-'.$label.'" href="'.route('admin..storys.toggle_status', $item->id).'" data-toggle="tooltip" title="'.__('Edit').'"> '.$name.' </a>';
-	
+
 			})
 			->addColumn('actions', function ($item) {
 				 return'<a href="'.route('admin..storys.edit', $item->id) .'" title="'.__('Edit').' Story"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i> '.__('Edit').'</button></a>
 				 <a href="'.route('admin..storys.destroy' , $item->id) .'"  data-_method="DELETE"  data-title="Please Confirm Delete" data-message="Do your really want to Delete this Story? This Action cannot be reversed" data-table="Story" class="ajax_link refresh mr-2 confirm btn btn-danger btn-sm" title="'.__('Delete').'Story" ><i class="fa fa-trash" aria-hidden="true"></i></a>';
 			}) ;
-      
+
       return $table->toJson();
 	}
 }
