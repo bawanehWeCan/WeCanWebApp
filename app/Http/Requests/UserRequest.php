@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Validation\Rules\Password;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UserRequest extends FormRequest
@@ -16,6 +17,7 @@ class UserRequest extends FormRequest
         return true;
     }
 
+
     /**
      * Get the validation rules that apply to the request.
      *
@@ -26,7 +28,12 @@ class UserRequest extends FormRequest
         return [
             'name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required',
+            'password' => ['required', Password::min(8)
+            ->mixedCase()
+            ->letters()
+            ->numbers()
+            ->symbols()
+            ->uncompromised(),],
         ];
     }
     public function messages()
@@ -36,9 +43,9 @@ class UserRequest extends FormRequest
             'email.unique' =>'البريد الإلكتروني مسجل مسبقا',
             'email.required' =>'يرجي ادخال البريد الإلكتروني',
             'email.email'=>'يرجى إدخال البريد الإلكتروني بشكل صحيح',
-            'password.required'=>'يرجى إدخال كلمة السر'
-
-
+            'password.required'=>'يرجى إدخال كلمة المرور',
+            'password.min'=>'يجب أن تحتوي كلمة المرور على 8 أحرف على الأقل',
         ];
     }
+
 }

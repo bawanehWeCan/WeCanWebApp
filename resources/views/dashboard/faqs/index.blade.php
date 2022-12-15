@@ -51,7 +51,7 @@
 
                                         <td>
                                             <a class="modal-effect btn btn-xs btn-danger" data-effect="effect-scale"
-                                            data-id="{{ $faq->id }}" data-name="{{ $faq->name }}"
+                                            data-id="{{ $faq->id }}" data-name="{{ $faq->question }}"
                                             data-toggle="modal" href="#modaldemo8" title="حذف"><i
                                                 class="fa fa-trash-o"></i></a>
 
@@ -79,7 +79,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content modal-content-demo">
                     <div class="modal-header">
-                        <h6 class="modal-title">حذف الخدمة</h6><button aria-label="Close" class="close"
+                        <h6 class="modal-title">حذف السؤال</h6><button aria-label="Close" class="close"
                             data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <form action="{{ url('admin/faq','test') }}" method="post">

@@ -45,7 +45,7 @@
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon">الترتيب:</span>
-                            <input type="number" id="username3" name="order" required="" class="form-control">
+                            <input type="number" min="0" id="username3" name="order" required="" class="form-control">
 
                             </span>
                         </div>

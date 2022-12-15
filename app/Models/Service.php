@@ -2,12 +2,15 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Helper\MySlugHelper;
+use Spatie\Sluggable\HasSlug;
+use Spatie\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Service extends Model
 {
-    use HasFactory;
+    use HasFactory,HasSlug;
     protected $fillable = [
         'name',
         'image',
@@ -35,4 +38,33 @@ class Service extends Model
     public function projects(){
         return $this->hasMany(Project::class);
     }
+
+     /**
+     * Get the options for generating the slug.
+     */
+    public function getSlugOptions() : SlugOptions
+    {
+        return SlugOptions::create()
+            ->generateSlugsFrom('name')//column used in generate slug
+            ->saveSlugsTo('slug');
+    }
+
+    //add this method from HasSlug Trait.
+
+    protected function generateNonUniqueSlug(): string
+    {
+        $slugField = $this->slugOptions->slugField;
+
+        if ($this->hasCustomSlugBeenUsed() && ! empty($this->$slugField)) {
+            return $this->$slugField;
+        }
+
+        return MySlugHelper::slug($this->getSlugSourceString());
+    }
+
+    public function prices()
+    {
+        return $this->hasMany(Price::class);
+    }
+
 }

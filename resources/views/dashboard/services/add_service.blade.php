@@ -46,7 +46,7 @@
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon">السعر:</span>
-                            <input type="number" id="username3" name="price" required="" class="form-control">
+                            <input type="number" id="username3" min="0" name="price" required="" class="form-control">
 
                             </span>
                         </div>

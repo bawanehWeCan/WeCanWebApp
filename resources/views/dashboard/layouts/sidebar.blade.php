@@ -2,7 +2,7 @@
     <nav class="sidebar-nav">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href=""><i class="icon-speedometer"></i> لوحة التحكم <span class="tag tag-info">جدید</span></a>
+                <a class="nav-link" href="{{route('admin.dashboard')}}"><i class="icon-speedometer"></i> لوحة التحكم <span class="tag tag-info">جدید</span></a>
             </li>
 
             <li class="nav-title">
@@ -31,12 +31,63 @@
                  <a class="nav-link" href="{{url('admin/projects')}}"><i class="fa fa-product-hunt"></i> المشاريع</a>
 
              </li>
+            <li class="nav-title">
+                إدارة صور المشاريع
+             </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="{{url('admin/images')}}"><i class="fa fa-product-hunt"></i>  صور المشاريع</a>
+
+             </li>
 
              <li class="nav-title">
                 إدارة مركز المساعدة
              </li>
               <li class="nav-item">
                  <a class="nav-link" href="{{url('admin/faqs')}}"><i class="icon-social-dropbox"></i> مركز المساعدة</a>
+
+             </li>
+
+             <li class="nav-title">
+                إدارة معلومات الشركة
+            </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="{{url('admin/infos')}}"><i class="icon-social-dropbox"></i>معلومات الشركة</a>
+
+             </li>
+             <li class="nav-title">
+                إدارة أعضاء الفريق
+            </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="{{url('admin/members')}}"><i class="icon-social-dropbox"></i>أعضاء الفريق</a>
+
+             </li>
+             </li>
+             <li class="nav-title">
+                إدارة خطط الأسعار
+            </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="{{url('admin/prices')}}"><i class="icon-social-dropbox"></i>خطط الأسعار</a>
+
+             </li>
+             <li class="nav-title">
+                إدارة القصص
+            </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="{{url('admin/stories')}}"><i class="icon-social-dropbox"></i>القصص </a>
+
+             </li>
+             <li class="nav-title">
+                إدارة العلامة التجارية
+            </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="{{url('admin/brands')}}"><i class="icon-social-dropbox"></i>العلامة التجارية </a>
+
+             </li>
+             <li class="nav-title">
+                إدارة الحساب
+            </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="{{route('admin.logout')}}"><i class="icon-social-dropbox"></i>تسجيل الخروج  </a>
 
              </li>
 
