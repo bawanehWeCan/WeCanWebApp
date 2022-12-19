@@ -111,11 +111,12 @@ Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->
 
 Route::get('/s/{slug}', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 
-Route::get('/portfolio/{id}', [App\Http\Controllers\HomeController::class, 'project'])->name('project');
+Route::get('/portfolio/{slug}', [App\Http\Controllers\HomeController::class, 'project'])->name('project');
 
 Route::get('/help', [App\Http\Controllers\HomeController::class, 'help'])->name('help');
 
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+Route::get('/members', [App\Http\Controllers\HomeController::class, 'members'])->name('members');
 
 
 

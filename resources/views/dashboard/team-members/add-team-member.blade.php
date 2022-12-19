@@ -43,14 +43,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon">الدولة:</span>
-                            <input type="text" id="username3" name="country" required="" class="form-control">
-
-                            </span>
-                        </div>
-                    </div>
+                    
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"> المسمى الوظيفي:</span>

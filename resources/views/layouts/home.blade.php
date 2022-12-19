@@ -301,7 +301,7 @@
 
                     <ul class="nav flex-column -active-links">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">
+                            <a class="nav-link" href="{{ route('home') }}">
                                 <div class="icon_current">
                                     <i class="ri-compass-line"></i>
                                 </div>

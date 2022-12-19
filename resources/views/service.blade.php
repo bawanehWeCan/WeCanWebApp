@@ -61,28 +61,19 @@
                             <source srcset="{{ asset($service->image) }}" type="image/webp">
                             <img class="img-full" src="{{ asset($service->image) }}" alt="">
                         </picture>
-                        <div class="action-sticky">
-                            <button type="button" class="btn btn-fullScreen">
-                                <i class="ri-fullscreen-fill"></i>
-                            </button>
-                            <button type="button" class="btn btn-share" data-bs-toggle="modal"
-                                data-bs-target="#mdllShareCollectibles">
-                                <i class="ri-share-forward-line"></i>
-                            </button>
-                        </div>
+                       
                     </div>
 
                     <div class="title-card-text d-flex align-items-center justify-content-between">
-                        <div class="text">
-                            <h1>{{ $service->name }}</h1>
-                            <p>Yes We Can Creat & Design Website </p>
+                        <div class="descriptio">
+                            <h4>{{ $service->name }}</h4>
                         </div>
                         <span class="btn-xs-size bg-pink text-white rounded-pill">الأكثر طلباً</span>
                     </div>
 
                     <div class="txt-price-coundown d-flex justify-content-between">
                         <div class="price">
-                            <h1>{{ $service->heading1 }}</h1>
+                            <h5>{{ $service->heading1 }}</h5>
                             <h2>
                                 {{ $service->content1 }}
                             </h2>
@@ -90,7 +81,7 @@
                     </div>
                     <div class="txt-price-coundown d-flex justify-content-between">
                         <div class="price">
-                            <h1>{{ $service->heading1 }}</h1>
+                            <h5>{{ $service->heading1 }}</h5>
                             <h2>
                                 {{ $service->content2 }}
                             </h2>
@@ -132,8 +123,8 @@
                     <div class="tab-content content-custome-data" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-Info" role="tabpanel"
                             aria-labelledby="pills-Info-tab">
-                            <div class="price">
-                                {{ $service->name }}
+                            <div class="descriptio">
+                                <p style="padding: 20px">{{ $service->features }}</p>
                             </div>
 
                         </div>
@@ -214,26 +205,75 @@
                         <div class="tab-pane fade" id="pills-History" role="tabpanel"
                             aria-labelledby="pills-History-tab">
 
-                            <div class="panel pricing-table">
+                            <section class="un-page-components">
+                                <div class="un-title-default">
+                                    <div class="text">
+                                        <h2>اعمالنا</h2>
+                                        <p>بعض من اعمالنا التي نفخر بإنجازها</p>
+                                    </div>
+                                </div>
+                                <div class="content-comp p-0">
 
-                                @foreach (\App\Models\Price::all() as $price )
+                                    <div class="space-items"></div>
 
+                                    <div class="unSwiper-cards bg-white py-3">
+                                        <div class="content-cards-NFTs">
+                                            <div class="swiper cardGradual">
+                                                <div class="swiper-wrapper">
+                                                    @foreach ($service->prices as $price )
+                                                    <div class="swiper-slide">
 
-                                    <div class="pricing-plan">
-                                        <img src="{{ asset( $price->image ) }}" alt=""
-                                            class="pricing-img">
-                                        <h2 class="pricing-header">{{ $price->name }}</h2>
-                                        <ul class="pricing-features">
-                                            <li class="pricing-features-item">{{ $price->feature1 }}</li>
-                                            <li class="pricing-features-item">{{ $price->feature1 }}</li>
-                                        </ul>
-                                        <span class="pricing-price">{{ $price->price }}</span>
+                                                    <div class="whole">
+                                                        <div @class([
+                                                            "type",
+                                                            'standard'=>$price->type=='فضي',
+                                                            'ultimate'=>$price->type=='ذهبي'
+                                                           ])>
+                                                        <p>{{ $price->type }}</p>
+                                                        </div>
+                                                        <section class="un-page-components">
+
+                                                            <div class="un-title-default">
+                                                                <div class="text price-text">
+
+                                                                <h4>{{ $price->name }}</h4>
+                                                                <img class="img-cover" src="/{{$price->image}}" />
+                                                                <p>{{ $price->content }}</p>
+                                                            </div>
+                                                            </div>
+                                                            </section>
+                                                            <div class="price-seprate"></div>
+                                                    <div class="plan">
+
+                                                        <div class="service-price-header">
+                                                            <span>JOD</span>{{ $price->price }}
+                                                            <p class="month">{{ $price->subscription }}</p>
+                                                        </div>
+
+                                                        <div class="service-price-content">
+
+                                                            <ul>
+
+                                                                <li>{{ $price->feature1 }}</li>
+                                                                <li>{{ $price->feature2 }}</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="price-pricing">
+                                                            <a href="{{route('contact')}}" class="bottom service-price-link"><p class="cart">أطلب الأن</p></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+
+                                              @endforeach
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                @endforeach
-
                             </div>
-
 
                         </div>
                         <div class="tab-pane fade" id="pills-Bids" role="tabpanel" aria-labelledby="pills-Bids-tab">
@@ -269,3 +309,17 @@
             </section>
 
 @endsection
+@push('scripts')
+<script>
+$(".service-price-header").click(function () {
+    var $this = $(this);
+    $this.closest(".whole").find(".content").slideToggle();
+  });
+
+  $(".whole").on("click", "a", function () {
+    event.preventDefault();
+    $(".plan").removeClass("selected");
+    $(this).closest(".whole").find(".plan").addClass("selected");
+  });
+</script>
+@endpush

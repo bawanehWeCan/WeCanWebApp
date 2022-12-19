@@ -39183,6 +39183,8 @@ button.btn.effect-click.w-100.btn-md-size.border.border-solid.border-snow.color-
       z-index: 10;
     }
 
+
+
     .pricing-table {
       /* box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02); */
       display: flex;
@@ -39379,3 +39381,153 @@ html[data-theme=dark] .c-form {
 #zuck-modal {
     z-index: 99999999999;
 }
+
+.service-price-link{
+	font-size: 20px;
+	font-family:'Open Sans';
+    text-decoration: none;
+
+}
+
+
+
+
+
+.service-price-content ul{
+	list-style: none;
+	font-size: 15px;
+	font-family:'Open Sans';
+	color: #9095aa;
+	padding: 0px;
+	margin: 0px;
+
+
+}
+
+
+.service-price-content li,li h4,li p, li img{
+border-bottom: 1px solid #494a5a;
+padding: 0px;
+margin: 0px;
+text-align: center;
+height: 52px;
+line-height: 52px;
+}
+
+
+
+
+
+
+.whole{
+	display: inline-block;
+
+}
+
+
+
+.type{
+	width: 300px;
+	border-radius: 5px 5px 0px 0px;
+	background-color: #eac80d;
+	height: 62px;
+	border-bottom: 3px solid #bfa30c;
+
+}
+
+.type p{
+	font-family:'Open Sans';
+    font-weight: 800;
+	font-size: 29px;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+
+
+
+}
+
+.plan{
+	width: 300px;
+
+	border-radius: 0px 0px 5px 5px;
+    font-family:'Open Sans';
+    font-style:condensed;
+    font-size: 90px;
+    text-align: center;
+    display:block;
+}
+.standard{
+	background-color: #1abc9c;
+	border-bottom: 3px solid #18937b;
+}
+
+.ultimate{
+	background-color: #5d6a9a;
+	border-bottom: 3px solid #474f6f;
+}
+
+
+
+
+
+.service-price-header{
+	border-bottom: 1px solid #494a5a;
+	padding-bottom: 39px;
+
+
+}
+
+.service-price-header span{
+	font-size: 32px;
+}
+
+.month{
+	font-size: 14px;
+	color: #575757;
+	padding: 0px;
+	margin: -10px;
+}
+
+.price-pricing{
+	height:80px;
+}
+
+.cart{
+
+  position: relative;
+  top: 16px;
+
+}
+
+.price-text{
+    width:300px;
+    border-bottom: 1px solid #494a5a;
+    margin-tap: 10px;
+
+}
+.price-text h4{
+    text-align: center;
+
+}
+.price-text p{
+    padding: 10px;
+
+}
+.price-text img{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+
+}
+
+.project-image{
+    border-radius: 15px;
+    margin: 10px;
+}
+

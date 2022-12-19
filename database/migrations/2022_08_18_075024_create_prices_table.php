@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('image');
+            $table->string('type');
             $table->text('content');
             $table->text('feature1');
             $table->text('feature2');

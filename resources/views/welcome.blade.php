@@ -18,23 +18,22 @@
                         <h2>علاماتنا التجارية</h2>
                         <p>بعض من علاماتنا التجارية</p>
                     </div>
-                    <div class="un-block-right">
-                        <a href="page-best-seller.html" class="icon-back" aria-label="iconBtn">
-                            <i class="ri-arrow-drop-left-line"></i>
-                        </a>
-                    </div>
+
                 </div>
                 <!-- un-block-auther -->
                 <div class="un-block-creators margin-t-20">
                     <!-- Swiper -->
                     <div class="swiper swiperCreators">
                         <div class="swiper-wrapper">
-                            @foreach (\App\Models\Brand::all() as $brand )
+                            @php
+                                $i=1;
+                            @endphp
+                            @foreach ($brands as $brand )
                                 <div class="swiper-slide">
                                 <!-- un-item-seller -->
-                                <a href="page-creator-profile.html" class="un-item-seller">
+                                <div class="un-item-seller">
                                     <div class="number">
-                                        {{ $brand->id }}
+                                        {{ $i++ }}
                                     </div>
                                     <div class="media-profile">
                                         <figure class="image-avatar">
@@ -51,15 +50,15 @@
                                             <p>{{ $brand->link }}</p>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             @endforeach
-                            
-                            
+
+
                         </div>
                     </div>
                 </div>
             </section>
-    
+
 
 @endsection

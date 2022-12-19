@@ -26,7 +26,6 @@ class TeamMemberRequest extends FormRequest
         return [
             'name' => 'required|min:5|max:100',
             'position' => 'required|min:5|max:200',
-            'country' => 'required|min:5|max:100',
             'order' => 'required|numeric|min:1|unique:infos,order',
             'image'=>'required_without:id|mimes:jpg,gif,jpeg,png',
         ];
@@ -37,7 +36,6 @@ class TeamMemberRequest extends FormRequest
         return [
             'name.required' => 'يرجى ادخال الاسم',
             'position.required' => 'يرجى ادخال المسمى الوظيفي',
-            'country.required' => 'يرجى ادخال الدولة',
             'image.required_without' => 'يرجى ادخال الصورة',
             'image.mimes' => 'ملف الصورة غير صالح',
             'order.required' => 'يرجى ادخال الترتيب',
@@ -48,8 +46,7 @@ class TeamMemberRequest extends FormRequest
             'name.max' => 'الحد الأقصى للاسم 100 أحرف',
             'position.min' => 'الحد الأدنى للمسمى الوظيفي 5 أحرف',
             'position.max' => 'الحد الأقصى للمسمى الوظيفي 100 أحرف',
-            'country.min' => 'الحد الأدنى للدولة 5 أحرف',
-            'country.min' => 'الحد الأقصى للدولة 5 أحرف',
+           
         ];
     }
 }

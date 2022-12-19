@@ -33,6 +33,17 @@
                             </span>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"> النوع:</span>
+                            <select id="username3" name="type" class="form-control">
+                                <option selected disabled>...إختار</option>
+                                    <option value="ذهبي">ذهبي</option>
+                                    <option value="فضي">فضي</option>
+                                    <option value="برونزي">برونزي</option>
+                              </select>
+                        </div>
+                    </div>
 
                     <div class="form-group">
                         <div class="input-group">

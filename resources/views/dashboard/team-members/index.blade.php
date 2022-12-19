@@ -33,7 +33,6 @@
                                         <th>اسم العضو</th>
                                         <th>الصورة </th>
                                         <th>المسمي الوظيفي</th>
-                                        <th>الدولة</th>
                                         <th>الترتيب </th>
                                         <th>العمليات</th>
                                     </tr>
@@ -51,7 +50,6 @@
                                             <img height="50px" width="50px" src="/{{$member->image}}">
                                           </td>
                                         <td>{{ $member->position }}</td>
-                                        <td>{{ $member->country }}</td>
                                         <td>{{ $member->order }}</td>
 
 

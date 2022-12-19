@@ -33,7 +33,7 @@
                                         <th>العنوان</th>
                                         <th>الصورة</th>
                                         <th>السعر</th>
-                                        <th>المحتوى</th>
+                                        <th>النوع</th>
                                         <th>الاشتراك </th>
                                         <th>الخدمة</th>
                                         <th>العمليات</th>
@@ -52,7 +52,7 @@
                                             <img height="50px" width="50px" src="/{{$price->image}}">
                                           </td>
                                         <td>{{ $price->price }}</td>
-                                        <td>{{ $price->content }}</td>
+                                        <td>{{ $price->type }}</td>
                                         <td>{{ $price->subscription }}</td>
                                         <td>{{ $price->service->name }}</td>
 

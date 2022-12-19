@@ -8,12 +8,12 @@
                     </a>
                     <h1>مركز المساعدة</h1>
                 </div>
-                 
+
                 <div class="un-block-right">
-                   
+
                     <div class="un-user-profile">
                         <div class="em_darkMode_menu">
-            
+
                             <a  href="{{ url('/') }}">
                                 <div class="btn btnCircle_default">
                                     <i class="ri-home-5-line"></i>
@@ -47,8 +47,8 @@
             <section class="help-search-support">
                 <div class="content">
                     <div class="head">
-                        <h2>كيف نستطيع مساعدتك ؟</h2>
-                        <p>ابحث عن استفسارك</p>
+                        <h4>كيف نستطيع مساعدتك ؟</h4>
+                        <h6>ابحث عن استفسارك</h6>
                     </div>
                     <div class="form-group with_icon m-0">
                         <div class="input_group">
@@ -101,84 +101,35 @@
                     </ul>
                 </div>
                 <div class="descriptio">
-                    <h2>الأسئلة الشائعة</h2>
+                    <h4>الأسئلة الشائعة</h4>
                     <p>
                         لقد تم طرح هذه الأسئلة كثيرًا ، لذلك أنشأنا هذا القسم الصغير لمساعدتك
                         بشكل أسرع وافضل.
                     </p>
                 </div>
                 <div class="accordion padding-x-20" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                هل شركة نستطيع مرخصة رسمياً ؟
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong> نعم.</strong> شركة نستطيع مرخصة رسمياً في وزارة الصناعة والتجارة - المملكة الأردنية الهاشمية تحت الرقم 246447
+
+                    @foreach ($faqs as $faq)
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading{{$faq->order}}">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse{{$faq->order}}" aria-expanded="true"
+                                    aria-controls="collapse{{$faq->order}}">
+                                    {{$faq->question}}
+                                </button>
+                            </h2>
+                            <div id="collapse{{$faq->order}}" @class([
+                                "accordion-collapse","collapse","show"=>$faq->order == $first
+                            ]) aria-labelledby="heading{{$faq->order}}"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    {{$faq->answer}}
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                هل تقدمون خدماتكم خارج الأردن ؟
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong> نعم.</strong> نفخر بتقديمنا للعديد من المشاريع خارج المملكة الأردنية الهاشمية ابرزها كان في السعودية والإمارات والكويت.
                             </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                هل تقدمون استشارات مجانية ؟
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong> نعم.</strong> نقدم استشارات مجانية في جميع مجالات عملنا .
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Is this a WordPres Theme?
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>No.</strong> Our item is an <code>HTML, CSS3, and JS Site</code> Template. You
-                                can however convert it to a WordPress Theme.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                What can I do with this template?
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                You can make mobile websites or progressive web apps for mobile devices.
-                            </div>
-                        </div>
-                    </div>
+
+                    @endforeach
                 </div>
             </section>
             <!-- ===================================
