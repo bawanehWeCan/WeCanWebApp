@@ -22,11 +22,10 @@
         <div class="content-NFTs-body">
 
             @php
-                //dd( \App\Models\Service::all() );
                 $i = 0;
             @endphp
 
-            @foreach (\App\Models\Service::orderBy('id','desc')->get() as $service)
+            @foreach ($services as $service)
                 @if ($i == 0)
                     <!-- item-card-nft -->
                     <div class="item-card-nft">
@@ -65,12 +64,7 @@
                                 <div class="user-avatar">
                                     <span>{{ $service->name }}</span>
                                 </div>
-                                <!--
-                                    <div class="number-eth">
-                                        <span class="main-price">تبدأ من</span>
-                                        <span>1000 دينار اردني</span>
-                                    </div>
-                                    -->
+                          
                             </div>
                         </div>
                     </a>

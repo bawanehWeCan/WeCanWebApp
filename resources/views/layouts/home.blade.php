@@ -34,7 +34,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700&display=swap" rel="stylesheet">
 
+    <!-- google map -->
+
+
     <style>
+        #map {
+            width: 100%;
+            height: 400px;
+        }
         html,
         body,
         * {
@@ -294,7 +301,7 @@
 
                     <ul class="nav flex-column -active-links">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">
+                            <a class="nav-link" href="{{ route('home') }}">
                                 <div class="icon_current">
                                     <i class="ri-compass-line"></i>
                                 </div>
@@ -462,6 +469,9 @@
     <script src="{{ asset('assets/js/custom.js') }}"></script>
     <!-- PWA APP SERVICE REGISTRATION AND WORKS JS -->
     <script src="{{ asset('assets/js/pwa-services.js') }}"></script>
+
+
+    @stack('scripts')
 
     <script>
         // BUILD ITEM

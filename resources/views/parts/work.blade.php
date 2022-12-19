@@ -16,7 +16,7 @@ START THE CONTENT
             <div class="content-cards-NFTs">
                 <div class="swiper cardGradual">
                     <div class="swiper-wrapper">
-                        @foreach ( \App\Models\Project::all() as $project )
+                        @foreach ($projects as $project )
 
                         <div class="swiper-slide">
                             <!-- item-card-gradual -->

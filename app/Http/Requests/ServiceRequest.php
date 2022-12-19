@@ -25,7 +25,7 @@ class ServiceRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'price' => 'required|integer',
+            'price' => 'required|numeric|min:1',
             'heading1' => 'required',
             'content1'=> 'required',
             'heading2' => 'required',
@@ -40,6 +40,8 @@ class ServiceRequest extends FormRequest
         return [
             'name.required' => 'يرجى ادخال اسم الخدمة',
             'price.required' => 'يرجى ادخال السعر',
+            'price.min' => 'هذا السعر غير مسموح به',
+            'price.numeric' => 'يجب أن يحتوي حقل السعر على بيانات رقمية',
             'heading1.required' => 'يرجى ادخال العنوان الأول',
             'content1.required'=> 'يرجى ادخال المحتوى الأول',
             'heading2.required' => 'يرجى ادخال العنوان الثاني',

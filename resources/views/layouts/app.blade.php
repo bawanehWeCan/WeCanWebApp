@@ -305,7 +305,7 @@
                     <ul class="nav flex-column ">
                         <li class="nav-item">
                             <a class="nav-link @if (request()->routeIs('home')) active @endif"
-                                href="{{ url('home') }}">
+                                href="{{ route('home') }}">
                                 <div class="icon_current">
                                     <i class="ri-compass-line"></i>
                                 </div>
@@ -477,7 +477,7 @@
     <script src="{{ asset('assets/js/custom.js?v=4') }}"></script>
     <!-- PWA APP SERVICE REGISTRATION AND WORKS JS -->
     <script src="{{ asset('assets/js/pwa-services.js') }}"></script>
-
+    @stack('scripts')
     <script>
         // BUILD ITEM
         function buildItem(id, type, length, src, preview, link, linkText, time, seen) {
@@ -512,7 +512,7 @@
 
             stories: [
 
-                @foreach (\App\Models\Story::all() as $story)
+                @foreach ($stories as $story)
 
                     {
                         id: '{{ $story->id }}',

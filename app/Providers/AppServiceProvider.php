@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Story;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
 
@@ -24,6 +25,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        view()->composer(
+            'layouts.app', function ($view) {
+                $view->with([
+                    'stories'=>  Story::all(),
+                ]);
+            }
+        );
         Paginator::useBootstrap();
     }
 }

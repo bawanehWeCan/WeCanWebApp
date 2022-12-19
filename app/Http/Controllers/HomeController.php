@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
+use App\Models\Faq;
 use App\Models\Project;
 use App\Models\Service;
+use App\Models\TeamMember;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -17,13 +20,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $services=Service::orderBy('id','desc')->get();
+        $brands = Brand::all();
+        $projects = Project::all();
+        return view('welcome',compact('brands','services','projects'));
     }
 
 
-    public function service( $id )
+    public function service( $slug )
     {
-        $service = Service::where('slug', $id )->first();
+        $service = Service::where('slug', $slug )->first();
 
         // get previous user id
         $previous = Service::where('id', '<', $service->id)->max('id');
@@ -38,17 +44,21 @@ class HomeController extends Controller
 
     public function services()
     {
-        return view('services');
+        $services = Service::all();
+        return view('services',compact('services'));
     }
 
     public function about()
     {
-        return view('about');
+        $brands = Brand::all();
+        return view('about',compact('brands'));
     }
 
     public function help()
     {
-        return view('help');
+        $faqs = Faq::orderBy('order','asc')->get();
+        $first =  $faqs->min('order');
+        return view('help',compact('faqs','first'));
     }
 
 
@@ -57,11 +67,18 @@ class HomeController extends Controller
         return view('contact');
     }
 
-    public function project( $id ){
+    public function project( $slug ){
 
-        $project = Project::where('slug', $id )->first();
+        $project = Project::with('images')->where('slug', $slug )->first();
+        $more = $project->service->projects;
+        return view('project', compact('project','more') );
 
-        return view( 'project', compact('project') );
+    }
+
+    public function members()
+    {
+        $members = TeamMember::orderBy('order','asc')->get();
+        return view('members',compact('members'));
 
     }
 }

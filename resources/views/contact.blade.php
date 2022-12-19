@@ -48,12 +48,9 @@
                   START THE SEARCH
                 ==================================== -->
     <section class="help-search-support">
-        <div class="content">
-            <div class="head">
-                <h2>جوجل ماب - Google Map</h2>
-                <p>اضافة الخريطة هنا بدلاً من الصورة</p>
-            </div>
-        </div>
+
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.0855042077183!2d35.881344399999996!3d31.985697499999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca1a45a0dcdf7%3A0x365e25caa5d1068e!2z2LTYsdmD2Kkg2K_Yp9mB2YbYtNmKINmE2K7Yr9mF2KfYqiDYp9mE2KrYtdmF2YrZhSDZiNin2YTYqtiz2YjZitmCINin2YTYpdmE2YPYqtix2YjZhtmKINmI2KfZhNiz2YjYtNmK2KfZhCDZhdmK2K_Zitin!5e0!3m2!1sen!2sjo!4v1671096004510!5m2!1sen!2sjo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </section>
     <!-- ===================================
                   START THE DESCRIPTION
@@ -181,3 +178,4 @@
         </ul>
     </section>
 @endsection
+

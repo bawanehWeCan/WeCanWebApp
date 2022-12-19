@@ -15,11 +15,16 @@ return new class extends Migration
     {
         Schema::create('prices', function (Blueprint $table) {
             $table->id();
-            $table->text('image');
-            $table->text('name');
+            $table->string('name');
+            $table->string('image');
+            $table->string('type');
+            $table->text('content');
             $table->text('feature1');
             $table->text('feature2');
-            $table->text('price');
+            $table->string('subscription');
+            $table->unsignedBigInteger('service_id');
+            $table->foreign('service_id')->references('id')->on('services')->cascadeOnDelete();
+            $table->string('price');
             $table->timestamps();
         });
     }
